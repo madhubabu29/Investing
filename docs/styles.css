@@ -36,6 +36,16 @@ nav a {
   font-weight: 600;
 }
 
+nav.subnav {
+  margin-top: -0.5rem;
+  background: white;
+  box-shadow: 0 4px 12px rgba(20, 33, 61, 0.08);
+}
+
+nav.subnav a {
+  color: #14213d;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -57,4 +67,29 @@ nav a {
 
 h1, h2, h3 {
   margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(20, 33, 61, 0.08);
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  background: #14213d;
+  color: white;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
 }
