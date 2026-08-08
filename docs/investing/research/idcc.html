@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - Research - IDCC</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>IDCC (InterDigital) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis using actual data from IDCC's financial statements.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="../terminology/index.html">Terminology</a>
+      <a href="index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Research</a>
+      <a href="ctsh.html">CTSH</a>
+      <a href="idcc.html">IDCC</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Business model</h2>
+        <p>InterDigital invents wireless and video patents (Wi-Fi, 5G, HEVC video compression, AI), then licenses them to device makers — Samsung, Apple, Huawei, Sony — and collects royalties while running on only 460 people. That produces $1.8M in revenue per employee and gross margins of 89%.</p>
+
+        <h2>The defining challenge for this DCF — lumpiness</h2>
+        <p>Revenue and FCF don't grow smoothly here; they lurch. When a major license deal comes up for renewal (or gets resolved through arbitration), a single agreement can move annual FCF by $150–200M. In 2024, revenue jumped 58% to $869M. In 2025, it dipped 4% to $834M but FCF nearly doubled to $529M as a large Samsung receivable converted to cash. Switching the base FCF assumption between 2025's peak ($529M) and the 5-year average ($283M) swings the intrinsic value by nearly 44%.</p>
+
+        <h2>The debt picture</h2>
+        <p>IDCC has $768M of net cash ($27.86/share). CapEx was just $16M in 2025 against $529M of FCF — a 3% reinvestment rate. The main "capex" for this business is R&amp;D (building the next patent generation) and patent purchases ($63M in 2025), neither of which appears in the FCF calculation above.</p>
+
+        <h2>DCF inputs and results — three scenarios</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Base</th>
+              <th>Conservative</th>
+              <th>Bear</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCF base</td>
+              <td>$529M (2025)</td>
+              <td>$529M</td>
+              <td>$529M</td>
+            </tr>
+            <tr>
+              <td>Growth</td>
+              <td>8% → 5%</td>
+              <td>5% → 3%</td>
+              <td>0% flat</td>
+            </tr>
+            <tr>
+              <td>WACC / terminal growth</td>
+              <td>8.3% / 3%</td>
+              <td>10% / 2.5%</td>
+              <td>12% / 1.5%</td>
+            </tr>
+            <tr>
+              <td>Intrinsic value / share</td>
+              <td>$524</td>
+              <td>$323</td>
+              <td>$196</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>What the scenarios say</h2>
+        <p>The conservative case at $323 essentially matches today's price ($328) — the market is saying: we believe this FCF is real, but we want a 10% return and we don't trust rapid growth in a patent portfolio that depends on litigation outcomes and renewal timing. Use the 5-year average base ($283M) instead, and the conservative case drops to $186 — implying the stock is overvalued if 2025 was a cyclical peak.</p>
+
+        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC, and here also to which base FCF year is chosen — a lumpy, deal-driven revenue base makes IDCC especially sensitive to that choice. These are mechanical estimates from reported data, not investment advice.</p>
+
+        <h2>Comparing across covered stocks</h2>
+        <p>A snapshot against <a href="ctsh.html">CTSH</a> and Novo Nordisk (NVO, not yet covered on this site) for context on how different these businesses are:</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>CTSH</th>
+              <th>NVO</th>
+              <th>IDCC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Employees</td>
+              <td>351,600</td>
+              <td>68,794</td>
+              <td>460</td>
+            </tr>
+            <tr>
+              <td>Revenue / employee</td>
+              <td>$60K</td>
+              <td>$680K</td>
+              <td>$1.8M</td>
+            </tr>
+            <tr>
+              <td>FCF margin</td>
+              <td>12.6%</td>
+              <td>19.1%</td>
+              <td>63.4%</td>
+            </tr>
+            <tr>
+              <td>CapEx intensity</td>
+              <td>1.4% of FCF</td>
+              <td>97% of FCF</td>
+              <td>3% of FCF</td>
+            </tr>
+            <tr>
+              <td>Net cash / debt</td>
+              <td>+$1.3B cash</td>
+              <td>−$16.9B debt</td>
+              <td>+$768M cash</td>
+            </tr>
+            <tr>
+              <td>Market pricing</td>
+              <td>Deep value skepticism</td>
+              <td>Conservative growth</td>
+              <td>Fairly priced (conservative case)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>StockAnalysis — IDCC Financials</li>
+          <li>StockAnalysis — IDCC Cash Flow</li>
+          <li>InterDigital Q4 2025 Press Release</li>
+          <li>valueinvesting.io — IDCC WACC</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
