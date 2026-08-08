@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - Research - CTSH</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CTSH (Cognizant) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis using actual data from CTSH's financial statements.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="../terminology/index.html">Terminology</a>
+      <a href="index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Research</a>
+      <a href="ctsh.html">CTSH</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>What the data shows</h2>
+        <p>Revenue growth has been modest — the 2021–2025 CAGR is 3.3%, with a rough patch in 2023 (-0.4%) and a rebound in 2025 (+7%). Free cash flow (FCF) has been volatile: it dipped to $1.83B in 2024, a weak year for IT services broadly, before recovering to $2.67B in 2025, driven by strong operating cash flow ($2.88B) and lean capex ($287M). The five-year average FCF margin is 11.2%.</p>
+
+        <h2>DCF inputs and results — three scenarios</h2>
+        <p>The scenarios differ on three levers: FCF growth rate, terminal growth rate, and WACC. The base case uses a published WACC of 7.9% and assumes growth stepping down from 6% to 4% as the company matures, with a 3% perpetual terminal rate. Every scenario adds net cash ($1.33B) and divides by 450.4M shares.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Base</th>
+              <th>Conservative</th>
+              <th>Bear</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCF growth yr 1–5</td>
+              <td>6%</td>
+              <td>4%</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td>FCF growth yr 6–10</td>
+              <td>4%</td>
+              <td>3%</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td>Terminal growth</td>
+              <td>3%</td>
+              <td>2.5%</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td>WACC</td>
+              <td>7.9%</td>
+              <td>9.5%</td>
+              <td>11%</td>
+            </tr>
+            <tr>
+              <td>Intrinsic value / share</td>
+              <td>$149.96</td>
+              <td>$96.79</td>
+              <td>$70.02</td>
+            </tr>
+            <tr>
+              <td>vs. market price ($54.73)</td>
+              <td>+174%</td>
+              <td>+77%</td>
+              <td>+28%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>The uncomfortable question the DCF raises</h2>
+        <p>Even the bear case — flat-ish FCF growth and an 11% discount rate — implies $70/share vs. the market's $54.73. The market's 8.7× EV/FCF and 10.8% FCF yield only make sense if FCF declines roughly 3–5% per year indefinitely — an "AI disrupts IT outsourcing" scenario not captured in a standard DCF growth assumption. On pure financials, CTSH looks cheap; the market may be pricing in structural headwinds to the business model.</p>
+
+        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC — a 1% change in either can swing intrinsic value by 20–30%. These are mechanical estimates from reported data, not investment advice.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Cognizant 2025 10-K (SEC)</li>
+          <li>Macrotrends — FCF history</li>
+          <li>Macrotrends — Revenue history</li>
+          <li>GuruFocus — WACC</li>
+          <li>StockAnalysis — Statistics</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

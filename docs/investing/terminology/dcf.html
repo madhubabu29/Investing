@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - DCF Valuation</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DCF Valuation</h1>
+      <p>Common stock valuation techniques, including discounted cash flow.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="index.html">Terminology</a>
+      <a href="../research/index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Terminology</a>
+      <a href="pe-ratio.html">P/E Ratios</a>
+      <a href="peg-bands.html">PEG Bands</a>
+      <a href="dcf.html">DCF Valuation</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Common valuation techniques</h2>
+        <ul>
+          <li><strong>Discounted Cash Flow (DCF):</strong> projects future free cash flows and discounts them to present value using a required rate of return (WACC). Most theoretically rigorous, but highly sensitive to growth and discount rate assumptions.</li>
+          <li><strong>Price-to-Earnings (P/E) Comparables:</strong> compares a company's P/E to peers or its own history. Quick and intuitive, but earnings can be manipulated and it ignores growth differences. See <a href="pe-ratio.html">P/E Ratios</a>.</li>
+          <li><strong>PEG Ratio:</strong> P/E divided by earnings growth rate, adjusting for growth. A PEG under 1 is often considered undervalued, though it's still a rough heuristic. See <a href="peg-bands.html">PEG Bands</a>.</li>
+          <li><strong>Dividend Discount Model (DDM):</strong> values a stock as the present value of future dividends, P = D / (r − g). Only works for stable, dividend-paying companies.</li>
+          <li><strong>Price-to-Book (P/B):</strong> compares market price to book value. Useful for banks and asset-heavy companies; less meaningful for tech or service firms.</li>
+          <li><strong>EV/EBITDA:</strong> Enterprise Value divided by EBITDA. Better than P/E for comparing companies with different capital structures or tax situations.</li>
+          <li><strong>Residual Income Model:</strong> values a stock based on earnings above the cost of equity (economic profit). Works even for non-dividend payers.</li>
+          <li><strong>Asset-Based Valuation:</strong> sum of all assets minus liabilities at fair market value. Most relevant for holding companies, real estate firms, or companies near liquidation.</li>
+          <li><strong>Reverse DCF:</strong> starts with the current stock price and solves for the implied growth rate, then judges whether that growth is realistic.</li>
+        </ul>
+        <p>In practice, analysts rarely rely on a single method. DCF is usually the primary valuation, sanity-checked against comparable multiples (P/E, EV/EBITDA). The result is a valuation range, not a single number.</p>
+        <p>For a worked DCF example applied to a real company, see <a href="../research/index.html">Research</a>.</p>
+      </section>
+    </main>
+  </body>
+</html>
