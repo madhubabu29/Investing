@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - Research - CRM</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CRM (Salesforce) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis using actual data from Salesforce's financial statements.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="../terminology/index.html">Terminology</a>
+      <a href="index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Research</a>
+      <a href="ctsh.html">CTSH</a>
+      <a href="idcc.html">IDCC</a>
+      <a href="esea.html">ESEA</a>
+      <a href="crm.html">CRM</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Business model</h2>
+        <p>Salesforce is the largest enterprise CRM/SaaS platform, selling subscriptions across Sales Cloud, Service Cloud, Marketing Cloud, Data Cloud, plus acquired platforms Slack, Tableau, and MuleSoft — with Informatica added in November 2025 for data integration and governance. Growth is now being pursued through AI monetization (Agentforce) layered on top of the existing subscription base rather than pure seat expansion.</p>
+
+        <h2>The defining tension for this DCF — decelerating growth, expanding margins</h2>
+        <p>Revenue growth has slowed sharply, from 24.66% in FY2022 to 9.58% in FY2026, as the SaaS market matures. But FCF margin has expanded just as sharply over the same stretch — from 19.9% of revenue to 34.7% — on the back of real cost discipline (post-2023 activist pressure, headcount reductions, opex tightening). Net result: FCF still grew 15.8% in FY2026 ($12.43B → $14.40B) even as revenue growth nearly halved. The open question is whether margin expansion has more room to run, or is approaching a ceiling — in which case future FCF growth converges back down toward revenue growth.</p>
+
+        <h2>The debt picture — a recent, deliberate shift</h2>
+        <p>Unlike the other companies covered here, Salesforce just took on substantial leverage. In November 2025 it issued $25B of new senior notes and a $6B term loan, plus drew on credit facilities, to fund the ~$9.6B Informatica acquisition alongside roughly $27B of share buybacks. Net debt now stands at $30.71B (about $37.50/share) against a market cap of $157.85B — a deliberate capital-allocation choice to lever up for M&A and shareholder returns rather than an operational weakness. WACC is 9.98% (GuruFocus), near the top of its 10-year range of 6.88%–12.77%.</p>
+
+        <h2>DCF inputs and results — three scenarios</h2>
+        <p>All scenarios use FY2026 FCF ($14.40B) as the base. They differ on how much of the recent margin-driven growth persists, and on discount rate. Every scenario subtracts net debt ($30.71B) and divides by 819M shares outstanding.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Base</th>
+              <th>Conservative</th>
+              <th>Bear</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCF growth yr 1–5</td>
+              <td>12%</td>
+              <td>8%</td>
+              <td>4%</td>
+            </tr>
+            <tr>
+              <td>FCF growth yr 6–10</td>
+              <td>6%</td>
+              <td>4%</td>
+              <td>2%</td>
+            </tr>
+            <tr>
+              <td>WACC / terminal growth</td>
+              <td>9.98% / 3%</td>
+              <td>11% / 2.5%</td>
+              <td>12.5% / 2%</td>
+            </tr>
+            <tr>
+              <td>Intrinsic value / share</td>
+              <td>$378.11</td>
+              <td>$240.38</td>
+              <td>$147.73</td>
+            </tr>
+            <tr>
+              <td>vs. market price ($192.74)</td>
+              <td>+96%</td>
+              <td>+25%</td>
+              <td>−23%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>The uncomfortable question the DCF raises</h2>
+        <p>Even the conservative case — 8% growth decaying to 4%, at an 11% discount rate — implies $240/share, 25% above today's $192.74. The market price sits between the conservative and bear cases, meaning the market isn't fully crediting the recent margin-expansion FCF trajectory continuing; it's pricing something closer to growth cooling toward the bear case. Given that management just chose to lever the balance sheet by over $30B for buybacks and an acquisition rather than reinvest in organic growth, the market may be reading that as reduced confidence in the next leg of growth (AI/Agentforce monetization) rather than crediting it as pure capital-allocation discipline.</p>
+
+        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC. It's also worth flagging that the net-debt snapshot used here reflects a single large financing event (the Informatica deal) from just a few months before this analysis — a reminder that for companies actively doing M&A and buybacks, the balance sheet can look meaningfully different a year later. These are mechanical estimates from reported data, not investment advice.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>StockAnalysis — CRM Cash Flow Statement</li>
+          <li>StockAnalysis — CRM Financials</li>
+          <li>StockAnalysis — CRM Statistics</li>
+          <li>GuruFocus — CRM WACC</li>
+          <li>Salesforce — Informatica acquisition press release / SEC 8-K</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
