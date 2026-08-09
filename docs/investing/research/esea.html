@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - Research - ESEA</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ESEA (Euroseas) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis using actual data from ESEA's financial statements.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="../terminology/index.html">Terminology</a>
+      <a href="index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Research</a>
+      <a href="ctsh.html">CTSH</a>
+      <a href="idcc.html">IDCC</a>
+      <a href="esea.html">ESEA</a>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Business model</h2>
+        <p>Euroseas owns and operates a fleet of 21 containerships (15 Feeder, 6 Intermediate; roughly 61,144 TEU of capacity) and leases them to major container liner companies under fixed-rate time charters. Revenue is well locked in near-term — forward charter coverage is about 96% for 2026 and 86% for 2027 — but drops to 48% for 2028, meaning a meaningful share of the fleet will need to be re-chartered at whatever rates prevail in a couple of years.</p>
+
+        <h2>The defining challenge for this DCF — capex lumpiness</h2>
+        <p>ESEA's free cash flow is driven as much by its fleet renewal cycle as by operations. The company took delivery of a wave of newbuildings in 2023–2024, and capex spiked to $178.9M in 2024 against $128.2M of operating cash flow — free cash flow went negative (-$50.75M). With most of that newbuild program now delivered, 2025 capex fell to $77.1M and FCF flipped back to positive $64.1M; trailing-twelve-month FCF is $108.2M as the capex cycle continues to ease. Which of these three figures — TTM, FY2025, or the 5-year average — you treat as the "normal" run-rate changes the valuation enormously.</p>
+
+        <h2>The debt picture</h2>
+        <p>Euroseas carries $211.5M of debt against $193.3M of cash — a modest $18.3M net debt position (about $2.59/share), reflecting a balance sheet that has delevered considerably as the newbuild delivery wave wound down. WACC is 7.73% (GuruFocus), helped by a strong 22.1% ROIC that keeps the cost of capital low despite operating in a cyclical, asset-heavy industry.</p>
+
+        <h2>DCF inputs and results — three scenarios</h2>
+        <p>The scenarios differ on which FCF year is used as the base, along with growth and discount rate. Every scenario subtracts net debt ($18.26M) and divides by 7.06M shares outstanding.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Base</th>
+              <th>Conservative</th>
+              <th>Bear</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCF base</td>
+              <td>$108.2M (TTM)</td>
+              <td>$64.1M (FY2025)</td>
+              <td>$32.9M (5-yr avg)</td>
+            </tr>
+            <tr>
+              <td>Growth yr 1–5</td>
+              <td>4%</td>
+              <td>2%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>Growth yr 6–10</td>
+              <td>2%</td>
+              <td>1%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>WACC / terminal growth</td>
+              <td>7.73% / 2%</td>
+              <td>9.5% / 1.5%</td>
+              <td>12% / 1%</td>
+            </tr>
+            <tr>
+              <td>Intrinsic value / share</td>
+              <td>$295.08</td>
+              <td>$113.34</td>
+              <td>$37.58</td>
+            </tr>
+            <tr>
+              <td>vs. market price ($75.29)</td>
+              <td>+292%</td>
+              <td>+51%</td>
+              <td>−50%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>The uncomfortable question the DCF raises</h2>
+        <p>Even the conservative case — anchored on FY2025's actual FCF with modest growth and a 9.5% discount rate — comes in well above the market price. The bear case only falls below market because it uses the 5-year average FCF, which is dragged down by the two heavy newbuild-capex years. In other words, almost the entire range of plausible outcomes hinges on one judgment call: was 2024's negative FCF a one-time newbuild delivery lump, or is it the recurring cost of a fleet that needs periodic reinvestment? Layered on top is the charter coverage cliff — only 48% of the fleet is booked for 2028 — which is a freight-rate cyclicality risk that a smooth DCF growth assumption doesn't really capture.</p>
+
+        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC, and for a capital-intensive shipping company like ESEA it is at least as sensitive to which historical FCF year is chosen as the starting base. These are mechanical estimates from reported data, not investment advice.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>StockAnalysis — ESEA Cash Flow Statement</li>
+          <li>StockAnalysis — ESEA Financials</li>
+          <li>StockAnalysis — ESEA Statistics</li>
+          <li>GuruFocus — ESEA WACC</li>
+          <li>Euroseas charter contract press releases (GlobeNewswire)</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
