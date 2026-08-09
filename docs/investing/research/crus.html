@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investing - Research - CRUS</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CRUS (Cirrus Logic) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis using actual data from Cirrus Logic's financial statements.</p>
+    </header>
+
+    <nav>
+      <a href="../../index.html">Home</a>
+      <a href="../index.html">Investing</a>
+      <a href="../strategy.html">Strategy</a>
+      <a href="../portfolio.html">Portfolio</a>
+      <a href="../education.html">Education</a>
+      <a href="../terminology/index.html">Terminology</a>
+      <a href="index.html">Research</a>
+    </nav>
+
+    <nav class="subnav">
+      <a href="index.html">Research</a>
+      <a href="ctsh.html">CTSH</a>
+      <a href="idcc.html">IDCC</a>
+      <a href="esea.html">ESEA</a>
+      <a href="crm.html">CRM</a>
+      <a href="stng.html">STNG</a>
+      <a href="mu.html">MU</a>
+      <a href="wdc.html">WDC</a>
+      <a href="mnst.html">MNST</a>
+      <a href="crus.html">CRUS</a>
+    </nav>
+
+    <main>
+      <section class="card-grid">
+        <article class="card">
+          <h3>Current Price</h3>
+          <p>$129.42<br /><small>Aug 7, 2026 · NASDAQ</small></p>
+        </article>
+        <article class="card">
+          <h3>FY2026 Actual FCF</h3>
+          <p>$636.6M<br /><small>OpCF $650.6M − CapEx $14.0M</small></p>
+        </article>
+        <article class="card">
+          <h3>WACC (base)</h3>
+          <p>9.28%<br /><small>estimates range 8.0%–11.58%</small></p>
+        </article>
+        <article class="card">
+          <h3>Net Cash</h3>
+          <p>$810.7M<br /><small>$16.18/share · as of Jun 27, 2026</small></p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Historical financials (actuals, fiscal year ends late March)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Fiscal Year</th>
+              <th>Revenue ($M)</th>
+              <th>FCF ($M)</th>
+              <th>FCF margin</th>
+              <th>Revenue growth</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FY2022</td>
+              <td>1,781.5</td>
+              <td>98.6</td>
+              <td>5.5%</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>FY2023</td>
+              <td>1,897.6</td>
+              <td>304.5</td>
+              <td>16.0%</td>
+              <td>6.5%</td>
+            </tr>
+            <tr>
+              <td>FY2024</td>
+              <td>1,788.9</td>
+              <td>384.0</td>
+              <td>21.5%</td>
+              <td>−5.7%</td>
+            </tr>
+            <tr>
+              <td>FY2025</td>
+              <td>1,896.1</td>
+              <td>421.6</td>
+              <td>22.2%</td>
+              <td>6.0%</td>
+            </tr>
+            <tr>
+              <td>FY2026</td>
+              <td>1,997.4</td>
+              <td>636.6</td>
+              <td>31.9%</td>
+              <td>5.3%</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Business model</h2>
+        <p>Cirrus Logic designs mixed-signal and audio/power semiconductors — DSP-based audio codecs, amplifiers, haptics drivers, and power management ICs — used mostly in smartphones. It's fabless (manufacturing is outsourced to third-party foundries), which keeps capex very low relative to revenue.</p>
+
+        <h2>The defining challenge for this DCF — single-customer concentration</h2>
+        <p>Apple accounted for roughly 89% of Cirrus Logic's FY2025 revenue. This isn't ordinary market cyclicality; it's idiosyncratic single-customer risk that no amount of revenue growth can diversify away from quickly. Any shift by Apple — in-sourcing a chip category, redesigning a part out, reducing content per device, or simply a slowdown in iPhone unit volumes — flows straight through to Cirrus's results in a way that laptop and Android design wins haven't yet offset at scale. Separately, FY2026 FCF jumped 51% to $636.6M on just 5.3% revenue growth, driven mostly by a sharp drop in capex ($37.7M in FY2024 down to just $14.0M in FY2026). Because Cirrus is fabless, capex here mostly covers test equipment and design tools rather than a factory, so it swings a lot year to year — a single low-capex year can inflate FCF, which is why the scenarios below lean on the 5-year average as a check against the FY2026 figure alone.</p>
+
+        <h2>The debt picture</h2>
+        <p>Cirrus carries no debt — it has never taken on meaningful borrowings. As of the most recent quarter (June 27, 2026), cash was $810.7M against a share count that's been steadily shrinking via buybacks (51.03M shares a year ago down to 50.12M now).</p>
+
+        <h2>DCF inputs and results — three scenarios</h2>
+        <p>The base case uses the FY2026 FCF spike as its starting point; the conservative and bear cases use the smoothed 5-year average ($369.1M) instead, to check how dependent the valuation is on FY2026's unusually low capex holding. Every scenario adds net cash ($810.7M) and divides by 50.12M shares.</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Input</th>
+              <th>Base</th>
+              <th>Conservative</th>
+              <th>Bear</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FCF base</td>
+              <td>$636.6M (FY2026)</td>
+              <td>$369.1M (5-yr avg)</td>
+              <td>$369.1M (5-yr avg)</td>
+            </tr>
+            <tr>
+              <td>Growth yr 1–5</td>
+              <td>6%</td>
+              <td>3%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>Growth yr 6–10</td>
+              <td>3%</td>
+              <td>1%</td>
+              <td>0%</td>
+            </tr>
+            <tr>
+              <td>WACC / terminal growth</td>
+              <td>9.28% / 3%</td>
+              <td>11.58% / 2%</td>
+              <td>14% / 1%</td>
+            </tr>
+            <tr>
+              <td>Intrinsic value / share</td>
+              <td>$253.07</td>
+              <td>$95.75</td>
+              <td>$70.02</td>
+            </tr>
+            <tr>
+              <td>vs. market price ($129.42)</td>
+              <td>+96%</td>
+              <td>−26%</td>
+              <td>−46%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>The uncomfortable question the DCF raises</h2>
+        <p>Unlike the AI-supercycle names covered elsewhere on this site, CRUS lands in the more familiar middle ground: the market price sits between the conservative and base cases. Treating FY2026's FCF spike as the new normal implies $253/share, 96% above market — so the market clearly doesn't believe FY2026's outsized margin expansion is fully repeatable. Using the smoothed 5-year average instead, the conservative case ($95.75) is only 26% below market, meaning the market is pricing something between "FY2026 was an aberration" and "modest structural margin improvement persists." Notably, none of these three scenarios explicitly price the single biggest risk: an Apple design-out. That's a binary, idiosyncratic event a smooth DCF growth assumption structurally can't represent — it would need to be modeled as a probability-weighted scenario, not a growth rate.</p>
+
+        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC, and here also to which FCF year is used as the base given how lumpy capex is for a fabless chipmaker. None of these scenarios capture customer-concentration tail risk. These are mechanical estimates from reported data, not investment advice.</p>
+
+        <h2>Sources</h2>
+        <ul>
+          <li>Cirrus Logic FY2026 10-K (SEC EDGAR, accession 0000772406-26-000018)</li>
+          <li>Cirrus Logic Q1 FY2027 10-Q (SEC EDGAR, accession 0000772406-26-000037)</li>
+          <li>GuruFocus, Alpha Spread, valueinvesting.io — CRUS WACC</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
