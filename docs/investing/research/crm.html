@@ -9,7 +9,11 @@
   <body>
     <header>
       <h1>CRM (Salesforce) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from Salesforce's financial statements.</p>
+      <p>Discounted cash flow analysis built only from Salesforce's own filings.</p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
     </header>
 
     <nav>
@@ -57,146 +61,43 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$192.74<br /><small>Aug 7, 2026 · NYSE</small></p>
-        </article>
-        <article class="card">
-          <h3>FY2026 Actual FCF</h3>
-          <p>$14,402M<br /><small>OpCF $14,996M − CapEx $594M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>9.98%<br /><small>GuruFocus</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Debt</h3>
-          <p>$27.44B<br /><small>$33.51/share · as of Apr 30, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals, fiscal year ends Jan 31)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fiscal Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FY2022</td>
-              <td>26,492</td>
-              <td>5,283</td>
-              <td>19.9%</td>
-              <td>24.7%</td>
-            </tr>
-            <tr>
-              <td>FY2023</td>
-              <td>31,352</td>
-              <td>6,313</td>
-              <td>20.1%</td>
-              <td>18.3%</td>
-            </tr>
-            <tr>
-              <td>FY2024</td>
-              <td>34,857</td>
-              <td>9,498</td>
-              <td>27.3%</td>
-              <td>11.2%</td>
-            </tr>
-            <tr>
-              <td>FY2025</td>
-              <td>37,895</td>
-              <td>12,434</td>
-              <td>32.8%</td>
-              <td>8.7%</td>
-            </tr>
-            <tr>
-              <td>FY2026</td>
-              <td>41,525</td>
-              <td>14,402</td>
-              <td>34.7%</td>
-              <td>9.6%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Salesforce is the largest enterprise CRM/SaaS platform, selling subscriptions across Sales Cloud, Service Cloud, Marketing Cloud, Data Cloud, plus acquired platforms Slack, Tableau, and MuleSoft — with Informatica added in November 2025 for data integration and governance. Growth is now being pursued through AI monetization (Agentforce) layered on top of the existing subscription base rather than pure seat expansion.</p>
-
-        <h2>The defining tension for this DCF — decelerating growth, expanding margins</h2>
-        <p>Revenue growth has slowed sharply, from 24.66% in FY2022 to 9.58% in FY2026, as the SaaS market matures. But FCF margin has expanded just as sharply over the same stretch — from 19.9% of revenue to 34.7% — on the back of real cost discipline (post-2023 activist pressure, headcount reductions, opex tightening). Net result: FCF still grew 15.8% in FY2026 ($12.43B → $14.40B) even as revenue growth nearly halved. The open question is whether margin expansion has more room to run, or is approaching a ceiling — in which case future FCF growth converges back down toward revenue growth.</p>
-
-        <h2>The debt picture — a recent, deliberate shift</h2>
-        <p>Unlike the other companies covered here, Salesforce just took on substantial leverage. It financed the ~$9.6B Informatica acquisition, which closed in November 2025, with an initial $6B of credit-agreement borrowings, then added $25B of new senior notes and a $6B term loan in the months that followed, alongside roughly $27B of share buybacks. By its most recent 10-Q (period ended April 30, 2026), total debt stood at $39.28B against $11.84B of cash — net debt of $27.44B (about $33.51/share) against a market cap of $157.85B. This is a deliberate capital-allocation choice to lever up for M&amp;A and shareholder returns rather than an operational weakness. WACC is 9.98% (GuruFocus), near the top of its 10-year range of 6.88%–12.77%.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>All scenarios use FY2026 FCF ($14.40B) as the base. They differ on how much of the recent margin-driven growth persists, and on discount rate. Every scenario subtracts net debt ($27.44B, as of the April 2026 10-Q) and divides by 819M shares outstanding.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF growth yr 1–5</td>
-              <td>12%</td>
-              <td>8%</td>
-              <td>4%</td>
-            </tr>
-            <tr>
-              <td>FCF growth yr 6–10</td>
-              <td>6%</td>
-              <td>4%</td>
-              <td>2%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>9.98% / 3%</td>
-              <td>11% / 2.5%</td>
-              <td>12.5% / 2%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$382.10</td>
-              <td>$244.37</td>
-              <td>$151.72</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($192.74)</td>
-              <td>+98%</td>
-              <td>+27%</td>
-              <td>−21%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>Even the conservative case — 8% growth decaying to 4%, at an 11% discount rate — implies $244/share, 27% above today's $192.74. The market price sits between the conservative and bear cases, meaning the market isn't fully crediting the recent margin-expansion FCF trajectory continuing; it's pricing something closer to growth cooling toward the bear case. Given that management chose to raise roughly $25B of new debt for buybacks and an acquisition rather than reinvest in organic growth, the market may be reading that as reduced confidence in the next leg of growth (AI/Agentforce monetization) rather than crediting it as pure capital-allocation discipline.</p>
-
-        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC. It's also worth flagging that the net-debt snapshot used here reflects a single large financing event (the Informatica deal) from just a few months before this analysis — a reminder that for companies actively doing M&A and buybacks, the balance sheet can look meaningfully different a year later. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Salesforce FY2026 10-K (SEC EDGAR, accession 0001108524-26-000060)</li>
-          <li>Salesforce Q1 FY2027 10-Q (SEC EDGAR, accession 0001108524-26-000127) — debt, cash, shares</li>
-          <li>GuruFocus — CRM WACC</li>
-          <li>Salesforce — Informatica acquisition press release / SEC 8-K</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$248.53<br /><small>Oct 23, 2026 close</small></p></article>
+<article class="card"><h3>Net debt</h3><p>$27.9B<br /><small>Debt $39.3B − cash and securities $11.4B</small></p></article><article class="card"><h3>Twelve-month FCF after SBC</h3><p>$11.5B<br /><small>To Jul 31, 2026</small></p></article><article class="card"><h3>Shares</h3><p>823M<br /><small>Aug 20, 2026</small></p></article>
+<article class="card"><h3>Implied growth at 10%</h3><p>4.8% a year<br /><small>what the price assumes forever</small></p></article>
+</section>
+<section><h2>Model-based rating: NOT A BUY at this price — moderate-high risk</h2>
+<p>Rule used for this group: at a 10% discount rate, find the perpetual annual growth in free cash flow (after share-based pay) that the current price requires. BUY if that is 2% or lower, HOLD if it is between 2% and 4%, NOT A BUY if it is above 4%. These thresholds are my own and not from any filing. For Salesforce, the price requires about 4.8% growth forever on its latest twelve months of $11.5B. With no growth at all, the same cash flow is worth $106 per share at 10% (price $248.53).</p>
+<p><strong>What would change this:</strong> A price below about $208 would bring the required growth under 4% (HOLD) and below about $144 under 2% (BUY). At the current price, free cash flow after share-based pay above about $13.4B a year (now $11.5B) would have the same effect as the 4% line.</p>
+<p><strong>Main risk to the rating:</strong> Debt rose from $14.4B to $39.3B in the first half of fiscal 2027 while buybacks were $27.3B (including a $25B accelerated repurchase in March 2026). Net debt is now about 2.4 times annual FCF after share-based pay, and share-based pay is $3.7B a year, about 23% of operating cash flow.</p>
+<p><small>Mechanical output of the model, not personalized investment advice; I am not a financial advisor.</small></p></section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Salesforce's SEC filings (10-K and 10-Q data as filed). The earlier version used third-party discount rates and a market-implied WACC range, and it did not deduct share-based pay. The filings contain no cost of capital, so values are shown across an 8%–12% range, with the market price shown only as a comparison. Share-based compensation is treated as a real cost: FCF here is operating cash flow − capital spending − share-based compensation.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Fiscal year (ends Jan 31)</th><th>Operating cash flow</th><th>Capex</th><th>Share-based pay</th><th>FCF after SBC</th></tr></thead><tbody><tr><td>FY24 (Jan-24)</td><td>$10.2B</td><td>$0.7B</td><td>$2.8B</td><td>$6.7B</td></tr><tr><td>FY25 (Jan-25)</td><td>$13.1B</td><td>$0.7B</td><td>$3.2B</td><td>$9.3B</td></tr><tr><td>FY26 (Jan-26)</td><td>$15.0B</td><td>$0.6B</td><td>$3.5B</td><td>$10.9B</td></tr><tr><td>Twelve months to Jul 31, 2026 (derived)</td><td>$15.8B</td><td>$0.6B</td><td>$3.7B</td><td>$11.5B</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Cash and investments</td><td>Cash $8.31B + short-term marketable securities $3.09B = $11.4B at Jul 31, 2026</td><td>Q2 FY2027 10-Q</td></tr><tr><td>Debt</td><td>$39.3B long-term debt at Jul 31, 2026 (Jan 31, 2026: $14.4B incl. $4.0B current)</td><td>Q2 FY2027 10-Q</td></tr><tr><td>Shares</td><td>823M at Aug 20, 2026 (923M at Feb 25, 2026)</td><td>10-Q; FY2026 10-K</td></tr><tr><td>Operating income</td><td>FY2024 $5.0B · FY2025 $7.2B · FY2026 $8.3B; twelve months to Jul 2026 about $8.7B</td><td>10-K; 10-Q</td></tr><tr><td>Buybacks</td><td>FY2024 $7.6B · FY2025 $7.8B · FY2026 $12.6B · first half FY2027 $27.3B</td><td>10-K; 10-Q</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>The value is the present value of a flat perpetual stream of FCF (after share-based pay) at four levels taken directly from the filings, plus cash less debt, divided by shares. No growth is assumed in the main table (g = 0), which is deliberately cautious for a business whose cash flow has been rising. The growth table below adds 2% and 4% perpetual growth on the latest twelve months, using value = FCF × (1 + g) ÷ (discount rate − g).</p>
+<p>The four levels are: <strong>Bear</strong> = the weakest of the last three fiscal years (floored at zero); <strong>Conservative</strong> = the median year; <strong>Base</strong> = the 3-year average; <strong>Run-rate</strong> = the latest twelve months.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario (FCF after share-based pay, per year)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Run-rate — latest twelve months: $11.5B</td><td>$141</td><td>$121</td><td>$106</td><td>$93</td><td>$82</td></tr><tr><td>Base — 3-year average: $9.0B</td><td>$102</td><td>$87</td><td>$75</td><td>$65</td><td>$57</td></tr><tr><td>Conservative — median year: $9.3B</td><td>$107</td><td>$91</td><td>$79</td><td>$68</td><td>$60</td></tr><tr><td>Bear — weakest year (floored at 0): $6.7B</td><td>$68</td><td>$57</td><td>$48</td><td>$40</td><td>$34</td></tr></tbody></table>
+<p>For comparison, the Oct 23, 2026 price was $248.53. At a 10% discount rate and no growth, the price implies a constant FCF of about $23.2B per year after share-based pay, against $11.5B reported over the latest twelve months.</p>
+<h2>Sensitivity to growth (latest twelve months of FCF)</h2>
+<table><thead><tr><th>Discount rate</th><th>No growth</th><th>2% growth</th><th>4% growth</th></tr></thead><tbody><tr><td>8%</td><td>$141</td><td>$203</td><td>$329</td></tr><tr><td>9%</td><td>$121</td><td>$170</td><td>$256</td></tr><tr><td>10%</td><td>$106</td><td>$144</td><td>$208</td></tr><tr><td>11%</td><td>$93</td><td>$124</td><td>$174</td></tr><tr><td>12%</td><td>$82</td><td>$109</td><td>$148</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul><li>Share count and debt are both after the March 2026 buyback, so per-share values use the 823M post-buyback shares and the new debt. Using the old share count with the new debt would be wrong.</li><li>Capital spending shown is purchases of property and equipment; I did not find a separate capitalized-software line in the data.</li><li>The twelve-month figure is derived: fiscal 2026 plus first-half FY2027 minus first-half FY2026.</li><li>Cash and debt are taken at the dates shown; leases are not counted as debt.</li></ul>
+<p>These are mechanical estimates from reported data, not investment advice; I am not a financial advisor.</p>
+<h2>Sources</h2>
+<ul><li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=10-K">Salesforce Form 10-K for fiscal 2026 (filed Mar 2, 2026) and Form 10-Q (filed Aug 26, 2026)</a></li><li>Price: Robinhood quote, Oct 23, 2026 close (comparison only)</li></ul>
+</section></main>
   </body>
 </html>
