@@ -9,7 +9,7 @@
   <body>
     <header>
       <h1>STNG (Scorpio Tankers) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from STNG's financial statements.</p>
+      <p>Discounted cash flow analysis built only from STNG's own filings.</p>
     </header>
 
     <nav>
@@ -57,155 +57,49 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$76.08<br /><small>Aug 7, 2026 · NYSE</small></p>
-        </article>
-        <article class="card">
-          <h3>2025 Actual FCF</h3>
-          <p>$416.8M<br /><small>OpCF $491.2M − CapEx $74.4M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>7.0%<br /><small>GuruFocus</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Cash</h3>
-          <p>$1.11B<br /><small>$24.40/share · as of Jun 30, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2021</td>
-              <td>540.8</td>
-              <td>26.2</td>
-              <td>4.8%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>2022</td>
-              <td>1,563.0</td>
-              <td>734.9</td>
-              <td>47.0%</td>
-              <td>189.0%</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>1,341.0</td>
-              <td>842.4</td>
-              <td>62.8%</td>
-              <td>−14.2%</td>
-            </tr>
-            <tr>
-              <td>2024</td>
-              <td>1,244.0</td>
-              <td>731.8</td>
-              <td>58.8%</td>
-              <td>−7.2%</td>
-            </tr>
-            <tr>
-              <td>2025</td>
-              <td>938.2</td>
-              <td>416.8</td>
-              <td>44.4%</td>
-              <td>−24.6%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Scorpio Tankers owns and operates a fleet of 81 product tankers (31 LR2, 36 MR, 14 Handymax, average age 10.2 years) transporting refined petroleum products worldwide. Revenue comes mostly from pool and spot-market employment plus some time and bareboat charters, which means earnings track prevailing tanker freight rates directly rather than being locked in by long-term contracts.</p>
-
-        <h2>The defining challenge for this DCF — rate-cycle volatility</h2>
-        <p>STNG's FCF swings with the tanker freight cycle, not a smooth operating trend. Russia's 2022 invasion of Ukraine rerouted global oil product trade onto longer voyages, spiking demand for tanker-days: revenue jumped 189% and FCF went from $26.2M (2021) to $734.9M (2022) almost overnight. Rates have been normalizing down since — FCF fell each year through 2025 to $416.8M — but the cycle isn't purely one-directional: Q2 2026 net income jumped to $387.5M from $73.5M a year earlier as spot rates firmed again (LR2 averaging $80,000/day, MR $53,000/day in the pool). Any single historical year is a poor proxy for a "normal" run-rate here.</p>
-
-        <h2>The debt picture</h2>
-        <p>As of Scorpio's most recent balance sheet (Q2 2026, period ended June 30, 2026), the company carried $728.9M of debt against $1.84B of cash — a $1.11B net cash position (about $24.40/share). That's a dramatically stronger position than year-end 2025: the FY2025 20-F showed only $151.9M of net cash ($600.1M debt vs. $752.0M cash, about $3.32/share) — roughly a seventh the size. The jump reflects the strong Q2 2026 earnings rebound described above flowing straight into cash. WACC is roughly 7.0% (GuruFocus), though estimates across sources range from 6.2% to 8.65% depending on methodology. Note the company has also just committed to new capex: four scrubber-fitted tankers (delivery 2029–2030) and a minority stake in a joint venture ordering eight scrubber-fitted VLCCs — future cash outflows not reflected in the balance sheet snapshot below.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>Given how much a single year's FCF can mislead for a spot-market shipper, each scenario anchors on a different FCF base: the 5-year average (which spans both the 2022 spike and the 2025 trough), the FY2025 actual, and a bear case assuming rates revert most of the way back toward pre-2022, structurally oversupplied levels. Every scenario adds the most recent (Q2 2026) net cash figure of $1.11B and divides by 45.48M shares. Using the much smaller year-end 2025 net cash figure instead ($151.9M, about $3.32/share) would pull every intrinsic value estimate down by roughly $21/share.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$550.4M (5-yr avg)</td>
-              <td>$416.8M (FY2025)</td>
-              <td>$150M (rate reversion)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>2%</td>
-              <td>0%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>1%</td>
-              <td>0%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>7.0% / 2%</td>
-              <td>8.65% / 1.5%</td>
-              <td>9.5% / 1%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$262.77</td>
-              <td>$140.89</td>
-              <td>$60.93</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($76.08)</td>
-              <td>+245%</td>
-              <td>+85%</td>
-              <td>−20%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>Even the bear case — flat $150M FCF, a level well below any year since the 2022 rate spike, discounted at 9.5% — comes in only 20% below today's price. The market is pricing STNG more pessimistically than a "rates fully revert to pre-2022 norms" scenario, which makes sense for a spot-market shipping company: investors typically apply a heavy discount to peak or even mid-cycle cash flow because the next down-cycle is a matter of when, not if, and new capex commitments (the VLCC JV, the four new tankers) will consume some of that net-cash cushion rather than return it to shareholders. On pure trailing financials STNG looks statistically cheap; the market is pricing the shipping cycle, not the last five years of actuals.</p>
-
-        <p><strong>Caveat:</strong> DCF is a poor natural fit for a spot-market shipping company — FCF isn't a smooth, compounding series here, it's a rate cycle. The three scenarios above are an attempt to bracket that cycle, not a forecast of it. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Scorpio Tankers FY2025 20-F (SEC EDGAR, accession 0001483934-26-000021)</li>
-          <li>Scorpio Tankers Q2 2026 6-K (SEC EDGAR, accession 0001628280-26-051064) — balance sheet</li>
-          <li>StockAnalysis — STNG Cash Flow Statement</li>
-          <li>StockAnalysis — STNG Financials</li>
-          <li>StockAnalysis — STNG Statistics</li>
-          <li>GuruFocus — STNG WACC</li>
-          <li>Scorpio Tankers — Q2 2026 results and fleet/rate updates</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$85.94<br /><small>Oct 23, 2026 close · NYSE</small></p></article>
+<article class="card"><h3>Cash less all debt</h3><p>$26.10/share<br /><small>$1,962.3M cash − $655M debt · Jul 28, 2026</small></p></article>
+<article class="card"><h3>Committed newbuild spend</h3><p>$978.2M<br /><small>installments to 2030 · Jul 28, 2026</small></p></article>
+<article class="card"><h3>Shares</h3><p>50.08M<br /><small>Jul 28, 2026 (+6.03M if converts convert)</small></p></article>
+</section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Scorpio Tankers' own filings (FY2025 20-F and the Q2 2026 earnings exhibit, both on SEC EDGAR). The earlier version used a 5-year average FCF of $550M and a 7.0% WACC taken from GuruFocus. The filings contain no cost of capital, so values are shown across an 8%–12% discount-rate range. The market price is shown only as a comparison.</p>
+<p>Problems in the earlier method that this version fixes: (1) it applied past FCF to a fleet that has since shrunk from about 99 to 74 owned ships, while also counting the cash from those sales; (2) it ignored $978.2M of committed newbuild and joint-venture installments; (3) it treated the $605M 1.75% convertible notes (conversion price about $100.39) as neither debt nor shares; (4) it added back share-based compensation, which is about $44M a year inside G&A and $71.7M in total equity-settled cost; (5) it relied on a third-party WACC.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Owned fleet</td><td>74 ships: 25 LR2, 35 MR, 14 Handymax (built 2014–2020)</td><td>Q2 2026 exhibit, fleet list Jul 28, 2026</td></tr><tr><td>Daily TCE (net of voyage costs)</td><td>FY2024 $32,573 · FY2025 $25,964 · H1 2026 $44,902</td><td>20-F; Q2 2026 exhibit</td></tr><tr><td>Vessel opex per day</td><td>FY2025 $8,018 · H1 2026 $8,374 (LR2 $9,005, MR $8,073, Handymax $7,710)</td><td>20-F; Q2 2026 exhibit</td></tr><tr><td>Revenue days / operating days</td><td>34,816 / 35,903 = 97.0% (FY2025)</td><td>20-F</td></tr><tr><td>G&A (incl. share-based pay)</td><td>$123.4M (FY2025); H1 2026 $85.7M</td><td>20-F; Q2 2026 exhibit</td></tr><tr><td>Operating cash flow</td><td>2023 $865.5M · 2024 $825.2M · 2025 $491.2M</td><td>20-F cash flow statement</td></tr><tr><td>Drydock and other vessel payments</td><td>2023 $23.1M · 2024 $93.4M · 2025 $74.4M; 2027 estimate $20.7M for 9 ships</td><td>20-F; Q2 2026 exhibit</td></tr><tr><td>Interest paid</td><td>2023 $154.7M · 2024 $96.9M · 2025 $62.1M</td><td>20-F</td></tr><tr><td>Debt Jul 28, 2026</td><td>$50M secured + $605M convertible notes = $655M; the $200M 2030 notes were redeemed in July</td><td>Q2 2026 exhibit</td></tr><tr><td>Newbuild installments</td><td>$978.2M: H2 2026 $92.6M (incl. the 2026 MR delivery), 2027 $257.6M, 2028 $264.9M, 2029 $262.8M, 2030 $91.0M</td><td>Q2 2026 exhibit</td></tr><tr><td>Newbuild prices</td><td>MR $46.33M; LR2 $72.8M</td><td>Q2 2026 exhibit</td></tr><tr><td>Useful life</td><td>25 years</td><td>20-F note on vessels</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>Unlevered free cash flow per ship: (TCE per day × 97% revenue-day ratio − opex per day) × 365, less drydock cost ($2.3M per drydock on a 3.75-year cycle, about $0.61M per ship-year), less G&A. Each ship earns until it reaches age 25 (the 2014 builds in 2039), with no scrap value. The 12 MR and LR2 newbuilds are credited with earnings from their delivery quarter. Class rates are set by the FY2025 relationship between LR2, MR and Handymax pool earnings, scaled so the current fleet averages the scenario TCE. There is no growth, no inflation and no further fleet renewal beyond the order book. Equity value = present value of these flows − present value of the $978.2M installments + cash − debt, divided by shares. Convertible notes are treated as debt at face, and switched to if-converted treatment (+6.03M shares) only if value per share exceeds $100.39.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Base — $29,269/day (avg of FY2024 and FY2025)</td><td>$89</td><td>$85</td><td>$81</td><td>$77</td><td>$74</td></tr><tr><td>Conservative — $25,964/day (FY2025 actual)</td><td>$71</td><td>$68</td><td>$65</td><td>$62</td><td>$60</td></tr><tr><td>Bear — $20,000/day (stress; below any filed level)</td><td>$38</td><td>$37</td><td>$36</td><td>$35</td><td>$34</td></tr></tbody></table>
+<p>For comparison, the Oct 23, 2026 price was $85.94. At 10%, the base case has an operating value of $3,558M before committed installments ($812M in present value).</p>
+<h2>Sensitivity to freight rates</h2>
+<p>Value per share at fleet-average daily TCE levels (same cost and fleet assumptions). H1 2026 averaged $44,902/day during the Strait of Hormuz disruption; management's July 2026 update showed third-quarter bookings of $65,000 (LR2) and $29,000 (MR) per day, with the quarter 34%–46% booked.</p>
+<table><thead><tr><th>TCE $/day</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>18,000</td><td>$27</td><td>$27</td><td>$26</td><td>$26</td><td>$25</td></tr><tr><td>22,000</td><td>$49</td><td>$47</td><td>$46</td><td>$44</td><td>$42</td></tr><tr><td>26,000</td><td>$71</td><td>$68</td><td>$65</td><td>$62</td><td>$60</td></tr><tr><td>30,000</td><td>$93</td><td>$89</td><td>$84</td><td>$81</td><td>$77</td></tr><tr><td>34,000</td><td>$114</td><td>$108</td><td>$104</td><td>$99</td><td>$95</td></tr><tr><td>40,000</td><td>$143</td><td>$136</td><td>$130</td><td>$124</td><td>$119</td></tr><tr><td>45,000</td><td>$168</td><td>$159</td><td>$151</td><td>$144</td><td>$138</td></tr></tbody></table>
+<p>Roughly each $4,000 per day of fleet-average TCE moves value by about $19–$20 per share. At around $18,000 per day the value falls to roughly the $26 per share of cash after all debt, which is the floor in this model.</p>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul>
+<li>The filings cover only recent years, so the bear rate of $20,000/day is my assumption rather than a filed figure.</li>
+<li>The two VLCCs and the minority VLCC joint venture are paid for but earn nothing in this model, because the filings give no VLCC rate. Treating that 2028 spending as value-neutral would add about $4.4 per share.</li>
+<li>Drydock is charged at a steady per-ship rate, which is higher than the company's own 2026–27 estimates.</li>
+<li>Value is as of July 28, 2026, the latest filed balance sheet.</li>
+</ul>
+<p>These are mechanical estimates from reported data, not investment advice.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1483934/000148393426000021/">Scorpio Tankers FY2025 Form 20-F</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1483934/000162828026051064/q22026earnings-exhibit991.htm">Scorpio Tankers Q2 2026 earnings release (Form 6-K exhibit 99.1)</a></li>
+<li>Price: Robinhood quote, Oct 23, 2026 close (comparison only)</li>
+</ul>
+</section></main>
   </body>
 </html>

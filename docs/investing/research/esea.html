@@ -9,7 +9,7 @@
   <body>
     <header>
       <h1>ESEA (Euroseas) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from ESEA's financial statements.</p>
+      <p>Discounted cash flow analysis built only from ESEA's own filings.</p>
     </header>
 
     <nav>
@@ -57,155 +57,49 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$75.29<br /><small>Aug 7, 2026 · NASDAQ</small></p>
-        </article>
-        <article class="card">
-          <h3>2025 Actual FCF</h3>
-          <p>$64.1M<br /><small>OpCF $141.1M − CapEx $77.1M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>7.73%<br /><small>GuruFocus</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Debt</h3>
-          <p>$18.3M<br /><small>$2.59/share · as of Mar 31, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2021</td>
-              <td>93.9</td>
-              <td>−21.5</td>
-              <td>−22.9%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>2022</td>
-              <td>182.7</td>
-              <td>23.4</td>
-              <td>12.8%</td>
-              <td>94.6%</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>189.4</td>
-              <td>17.7</td>
-              <td>9.4%</td>
-              <td>3.7%</td>
-            </tr>
-            <tr>
-              <td>2024</td>
-              <td>212.9</td>
-              <td>−50.8</td>
-              <td>−23.8%</td>
-              <td>12.4%</td>
-            </tr>
-            <tr>
-              <td>2025</td>
-              <td>227.9</td>
-              <td>64.1</td>
-              <td>28.1%</td>
-              <td>7.0%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Euroseas owns and operates a fleet of 21 containerships (15 Feeder, 6 Intermediate; roughly 61,144 TEU of capacity) and leases them to major container liner companies under fixed-rate time charters. Revenue is well locked in near-term — forward charter coverage is about 96% for 2026 and 86% for 2027 — but drops to 48% for 2028, meaning a meaningful share of the fleet will need to be re-chartered at whatever rates prevail in a couple of years.</p>
-
-        <h2>The defining challenge for this DCF — capex lumpiness</h2>
-        <p>ESEA's free cash flow is driven as much by its fleet renewal cycle as by operations. The company took delivery of a wave of newbuildings in 2023–2024, and capex spiked to $178.9M in 2024 against $128.2M of operating cash flow — free cash flow went negative (-$50.75M). With most of that newbuild program now delivered, 2025 capex fell to $77.1M and FCF flipped back to positive $64.1M; trailing-twelve-month FCF is $108.2M as the capex cycle continues to ease. Which of these three figures — TTM, FY2025, or the 5-year average — you treat as the "normal" run-rate changes the valuation enormously.</p>
-
-        <h2>The debt picture</h2>
-        <p>As of Euroseas's most recent balance sheet (Q1 2026, period ended March 31, 2026), the company carried $211.5M of debt against $193.3M of cash and short-term investments — a modest $18.3M net debt position (about $2.59/share). That's meaningfully better than year-end 2025, when the FY2025 20-F showed debt of $216.8M against cash of $176.5M — a $40.4M net debt position — so the balance sheet has delevered further in the first quarter of 2026. WACC is 7.73% (GuruFocus), helped by a strong 22.1% ROIC that keeps the cost of capital low despite operating in a cyclical, asset-heavy industry.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>The scenarios differ on which FCF year is used as the base, along with growth and discount rate. Every scenario subtracts the most recent (Q1 2026) net debt figure of $18.26M and divides by 7.06M shares outstanding.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$108.2M (TTM)</td>
-              <td>$64.1M (FY2025)</td>
-              <td>$32.9M (5-yr avg)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>4%</td>
-              <td>2%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>2%</td>
-              <td>1%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>7.73% / 2%</td>
-              <td>9.5% / 1.5%</td>
-              <td>12% / 1%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$295.08</td>
-              <td>$113.34</td>
-              <td>$37.58</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($75.29)</td>
-              <td>+292%</td>
-              <td>+51%</td>
-              <td>−50%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>Even the conservative case — anchored on FY2025's actual FCF with modest growth and a 9.5% discount rate — comes in well above the market price. The bear case only falls below market because it uses the 5-year average FCF, which is dragged down by the two heavy newbuild-capex years. In other words, almost the entire range of plausible outcomes hinges on one judgment call: was 2024's negative FCF a one-time newbuild delivery lump, or is it the recurring cost of a fleet that needs periodic reinvestment? Layered on top is the charter coverage cliff — only 48% of the fleet is booked for 2028 — which is a freight-rate cyclicality risk that a smooth DCF growth assumption doesn't really capture.</p>
-
-        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC, and for a capital-intensive shipping company like ESEA it is at least as sensitive to which historical FCF year is chosen as the starting base. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Euroseas FY2025 20-F (SEC EDGAR, accession 0001171843-26-002807)</li>
-          <li>Euroseas Q1 2026 6-K (SEC EDGAR, accession 0001317861-26-000024) — balance sheet</li>
-          <li>StockAnalysis — ESEA Cash Flow Statement</li>
-          <li>StockAnalysis — ESEA Financials</li>
-          <li>StockAnalysis — ESEA Statistics</li>
-          <li>GuruFocus — ESEA WACC</li>
-          <li>Euroseas charter contract press releases (GlobeNewswire)</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$66.58<br /><small>Oct 23, 2026 close · NASDAQ</small></p></article>
+<article class="card"><h3>Net debt</h3><p>$4.9M net debt<br /><small>$203.2M cash and securities − $208.1M debt · Jun 30, 2026</small></p></article>
+<article class="card"><h3>Newbuild commitments</h3><p>$479.7M<br /><small>12 ships, payable to Jun 2029</small></p></article>
+<article class="card"><h3>Shares</h3><p>7.06M<br /><small>Jun 30, 2026</small></p></article>
+</section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Euroseas' own filings (FY2025 20-F and the six-month 6-K filed in October 2026). The earlier version used TTM and 5-year-average FCF, a 7.73% WACC taken from GuruFocus, and a March 31 balance sheet. The filings contain no cost of capital, so values are shown across an 8%–12% range. The market price is shown only as a comparison.</p>
+<p>Problems in the earlier method that this version fixes: (1) it did not model the 12-ship newbuild program ($553.4M contracted, $479.7M still payable) or the earnings those ships will bring; (2) it used a March 31 balance sheet and a net debt figure that left out the $38.9M of securities bought in 2026 and the minority partner now owning 49% of one newbuild; (3) it used historical FCF instead of the contract-by-contract charter book; (4) the 96%/86%/48% charter coverage it quoted is from the 20-F as of April 15, 2026 and covers "ship capacity days" (the 20-F says 86% for the remainder of 2026, 65% for 2027, 44% for 2028).</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Fleet</td><td>21 containerships (61,144 TEU), average age 12.1 years, all on time charter; 12 newbuilds on order</td><td>20-F fleet table (Apr 15, 2026); 6-K</td></tr><tr><td>Average TCE per day</td><td>FY2024 $28,054 · FY2025 $29,107 · H1 2026 $30,330</td><td>20-F; 6-K</td></tr><tr><td>Cost per ship-day (H1 2026)</td><td>Vessel opex $6,013 + management fee $1,040 = $7,053; G&A $910; drydock FY2024 $1,329, FY2025 $815, H1 2026 $71</td><td>6-K</td></tr><tr><td>Commissions</td><td>2.8% of charter revenue</td><td>6-K</td></tr><tr><td>Operating cash flow</td><td>2023 $130.0M · 2024 $128.2M · 2025 $141.1M · H1 2026 $75.2M</td><td>20-F; 6-K</td></tr><tr><td>Cash paid for vessels under construction + improvements</td><td>2023 $112.3M · 2024 $178.9M · 2025 $77.1M · H1 2026 $38.6M</td><td>20-F; 6-K</td></tr><tr><td>Contracted minimum revenue</td><td>$600.1M: $199.9M to Jun 2027, $172.4M to Jun 2028, $103.1M to Jun 2029, then $51.7M, $50.5M, $22.5M</td><td>6-K note 8</td></tr><tr><td>Newbuild payments outstanding</td><td>$479.7M: $54.5M to Jun 2027, $269.6M to Jun 2028, $155.6M to Jun 2029</td><td>6-K note 8</td></tr><tr><td>Cash and securities, Jun 30, 2026</td><td>Cash $157.4M + restricted $7.0M + debt securities $18.9M + equity securities $19.9M = $203.2M</td><td>6-K balance sheet</td></tr><tr><td>Debt, Jun 30, 2026</td><td>$208.1M (floating, SOFR + 1.80%–2.295%), matures 2027–2034</td><td>6-K note 7</td></tr><tr><td>Other</td><td>Non-controlling interest $5.0M; 7,055,381 shares; useful life 25 years</td><td>6-K</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>Every ship is modeled month by month. Existing ships earn their listed charter rate until the contract ends (April 15 fleet table), then the "re-charter" rate, which is the ship's latest contract rate times the scenario factor. Newbuilds start in their delivery quarter; the four 4,484 TEU ships have charters at $35,500 per day, and the other eight re-charter at the latest rates for their size ($30,000 for 2,800 TEU, $23,500 for 1,800 TEU). Cash margin per ship-day = rate × 99.5% utilization × (1 − 2.8% commission) − $7,053 operating and management cost − $1,072 drydock (average of FY2024 and FY2025), less $6.9M a year of G&A. Each ship earns until age 25 (never less than its contract), with no scrap value, no growth and no ships beyond the order book. Equity value = present value of these flows − present value of the $479.7M installments + $203.2M cash and securities − $208.1M debt − $5.0M minority interest, divided by 7.06M shares.</p>
+<p>Check: contracted revenue in this model is $571M against the 6-K's $600M. The gap is charters fixed after April 15, so the model is slightly conservative.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Base — today's charter rates persist</td><td>$203</td><td>$186</td><td>$170</td><td>$156</td><td>$144</td></tr><tr><td>Conservative — re-charter rates 15% lower</td><td>$156</td><td>$142</td><td>$130</td><td>$119</td><td>$109</td></tr><tr><td>Bear — re-charter rates 35% lower</td><td>$92</td><td>$83</td><td>$76</td><td>$69</td><td>$63</td></tr></tbody></table>
+<p>For comparison, the Oct 23, 2026 price was $66.58. At 10%, base-case operating value is $1,617M before committed installments ($408M in present value). The bear factor of 65% is anchored on Euroseas' own book: in early 2026 its 2,800 and 1,740 TEU ships were still on charters near $19,000–$20,000 per day, against about $30,000 for new fixtures of the same types.</p>
+<h2>Sensitivity to re-charter rates</h2>
+<table><thead><tr><th>Re-charter rate vs. today</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>50%</td><td>$44</td><td>$40</td><td>$35</td><td>$32</td><td>$29</td></tr><tr><td>65%</td><td>$92</td><td>$83</td><td>$76</td><td>$69</td><td>$63</td></tr><tr><td>85%</td><td>$156</td><td>$142</td><td>$130</td><td>$119</td><td>$109</td></tr><tr><td>100%</td><td>$203</td><td>$186</td><td>$170</td><td>$156</td><td>$144</td></tr><tr><td>114%</td><td>$251</td><td>$229</td><td>$210</td><td>$193</td><td>$178</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul>
+<li>The factors of 85% and 65% are my assumptions, anchored as described, not filed forecasts.</li>
+<li>The charter table is from the 20-F (April 15, 2026); a few ships were re-chartered afterwards, which the 6-K does not list.</li>
+<li>Value is as of June 30, 2026. A $0.80 per share dividend was declared in August and paid September 16.</li>
+<li>The 49% minority partner in the ship Thrylos is handled by deducting its book value ($5.0M); the effect is under $1 per share.</li>
+<li>Newbuild costs not yet paid are assumed to be paid from cash, with no new debt.</li>
+</ul>
+<p>These are mechanical estimates from reported data, not investment advice.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1341170/000117184326002807/esea20251231_20f.htm">Euroseas FY2025 Form 20-F</a></li>
+<li><a href="https://www.sec.gov/Archives/edgar/data/1341170/000117184326006556/esea20260610_6k.htm">Euroseas six-month 2026 Form 6-K</a></li>
+<li>Price: Robinhood quote, Oct 23, 2026 close (comparison only)</li>
+</ul>
+</section></main>
   </body>
 </html>
