@@ -9,7 +9,8 @@
   <body>
     <header>
       <h1>WDC (Western Digital) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from Western Digital's financial statements.</p>
+      <p>Discounted cash flow analysis built only from Western Digital's own filings.</p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
     </header>
 
     <nav>
@@ -57,139 +58,41 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$434.30<br /><small>Aug 9, 2026 · NASDAQ</small></p>
-        </article>
-        <article class="card">
-          <h3>FY2025 Actual FCF</h3>
-          <p>$1,279M<br /><small>OpCF $1,691M − CapEx $412M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>9.2%<br /><small>estimates range 8.1%–19.3%</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Cash</h3>
-          <p>$469M<br /><small>$1.36/share · as of Apr 3, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals, continuing operations only)</h2>
-        <p>Western Digital completed the spinoff of its NAND flash business (SanDisk Corp) in 2025 and restated prior years in its FY2025 10-K to show continuing (HDD-only) operations. Only 3 comparable years exist on this basis — the pre-spinoff combined-company figures included the divested Flash business and aren't comparable, so they're excluded here.</p>
-        <table>
-          <thead>
-            <tr>
-              <th>Fiscal Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FY2023</td>
-              <td>6,255</td>
-              <td>−1,229</td>
-              <td>−19.6%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>FY2024</td>
-              <td>6,317</td>
-              <td>−781</td>
-              <td>−12.4%</td>
-              <td>1.0%</td>
-            </tr>
-            <tr>
-              <td>FY2025</td>
-              <td>9,520</td>
-              <td>1,279</td>
-              <td>13.4%</td>
-              <td>50.7%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Western Digital makes hard disk drives (HDDs) — primarily nearline/enterprise drives sold to cloud and hyperscale datacenter customers, plus some consumer and client storage. Enterprise HDDs remain roughly seven times cheaper than SSDs for bulk AI-scale storage, which has made WDC a concentrated, pure-play way to invest in what analysts are calling a storage supercycle following the SanDisk spinoff.</p>
-
-        <h2>The defining challenge for this DCF — a spinoff and a supercycle at once</h2>
-        <p>Within the short 3-year comparable window, WDC went from FCF-negative in FY2023–2024 (spinoff transition costs plus a soft HDD market) to a sharp positive inflection in FY2025 ($1.28B) as enterprise AI datacenter demand for storage capacity surged. That trend has only accelerated since: WDC's entire 2026 HDD production capacity is sold out, with supply contracts locked in through 2028, and quarterly revenue has climbed every quarter this fiscal year (Q1 FY2026 $2.82B → Q2 $3.02B → Q3 $3.34B). Trailing-twelve-month FCF (through April 2026) is $2.9B — more than double FY2025's already-strong figure, with FCF margin expanding from 13.4% to roughly 25% over that stretch.</p>
-
-        <h2>The debt picture</h2>
-        <p>The balance sheet has transformed just as fast as the income statement. WDC had $2.6B of net debt at FY2025 year-end (June 27, 2025); by Q3 FY2026 (April 3, 2026) that flipped to a small $469M net cash position, as total debt was paid down from $4.7B to $1.6B in nine months, funded directly by the FCF inflection above. WACC estimates range widely (8.1% to 19.3% across sources), again reflecting how volatile the stock has been through this swing.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>Each scenario anchors on a different FCF base to bracket the uncertainty: the current TTM run-rate, the FY2025 actual, and a thin-but-positive "structural" estimate for the bear case (the raw 3-year average is deeply negative, but that's skewed by one-time spinoff separation costs in FY2023–2024, not representative of steady-state HDD economics). Every scenario adds net cash ($469M) and divides by 344.68M shares.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$2,905M (TTM)</td>
-              <td>$1,279M (FY2025)</td>
-              <td>$200M (structural estimate)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>8%</td>
-              <td>5%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>4%</td>
-              <td>2%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>9.2% / 2.5%</td>
-              <td>13.4% / 2%</td>
-              <td>19.3% / 1%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$172.26</td>
-              <td>$38.77</td>
-              <td>$4.40</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($434.30)</td>
-              <td>−60%</td>
-              <td>−91%</td>
-              <td>−99%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>As with Micron, this is the inverse of the usual finding on this site: even the base case — TTM FCF growing 8% decaying to 4%, at a 9.2% discount rate — implies only $172/share, 60% below the $434.30 market price. The market is pricing in a continuation and further acceleration of the storage supercycle well beyond what even the current elevated run-rate supports under a standard DCF. "Sold out through 2028" bookings make that bet more credible than usual, but HDDs — like DRAM — have a long history of boom-bust cycles once new supply eventually catches up with demand.</p>
-
-        <p><strong>Caveat:</strong> The FY2023–2025 history is short and structurally messy (spinoff transition costs, a demand inflection, and a business-model change all inside 3 years), so "normal" FCF is unusually hard to pin down here. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Western Digital FY2025 10-K (SEC EDGAR, accession 0000106040-25-000038)</li>
-          <li>Western Digital Q3 FY2026 10-Q (SEC EDGAR, accession 0001628280-26-029054)</li>
-          <li>Coverage of Western Digital's sold-out 2026 HDD capacity (TechRadar, MLQ News, Yahoo Finance)</li>
-          <li>GuruFocus, valueinvesting.io, Alpha Spread — WDC WACC</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$343.54<br /><small>Oct 23, 2026 close</small></p></article>
+<article class="card"><h3>Net cash</h3><p>$0.5B<br /><small>$1.4/share · Oct 2, 2026</small></p></article><article class="card"><h3>FY2026 FCF after SBC</h3><p>$3.3B<br /><small>OpCF $3.9B − capex $0.4B − SBC $0.2B</small></p></article><article class="card"><h3>Shares</h3><p>374M<br /><small>Oct 15, 2026</small></p></article>
+</section>
+<section><h2>Model-based rating: NOT A BUY at this price — very high risk</h2>
+<p>Rule used: BUY if the price is below the base-case value at 10%; HOLD if it is between the base and run-rate values; NOT A BUY if it is above the run-rate value. At 10%, Western Digital's base value is $30 and its run-rate value (latest quarter annualized) is $140. The $344 price is above both. It needs about $12.8B of FCF a year after share-based pay forever, against $5.2B at the latest quarter's pace and $3.3B in fiscal 2026.</p>
+<p><strong>What would change this:</strong> quarterly FCF sustained above about $3B (about $12B a year), or a price below roughly $140. <strong>Main risk to the rating:</strong> storage demand and pricing have been the strongest in years, so an investor who expects the boom to continue and grow would value it higher than this flat model does.</p>
+<p><small>Mechanical output of the model, not personalized investment advice; I am not a financial advisor.</small></p></section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Western Digital's SEC filings (10-K and 10-Q data as filed). The earlier version used a third-party WACC estimate, and it did not deduct share-based pay. The filings contain no cost of capital, so values are shown across an 8%–12% range, with the market price shown only as a comparison. Share-based compensation is treated as a real cost: FCF here is operating cash flow − capital spending − share-based compensation.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Fiscal year</th><th>Operating cash flow</th><th>Capex</th><th>Share-based pay</th><th>FCF after SBC</th></tr></thead><tbody><tr><td>FY2024</td><td>−$0.3B</td><td>$0.5B</td><td>$0.3B</td><td>−$1.1B</td></tr><tr><td>FY2025</td><td>$1.7B</td><td>$0.4B</td><td>$0.3B</td><td>$1.0B</td></tr><tr><td>FY2026</td><td>$3.9B</td><td>$0.4B</td><td>$0.2B</td><td>$3.3B</td></tr><tr><td>Q1 FY2027 (Jul–Oct 2026)</td><td>$1.6B</td><td>$0.2B</td><td>$0.1B</td><td>$1.3B</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Cash and debt</td><td>Cash $1.31B; debt $0.79B (revolver $650M + 3.00% convertible notes $141M) at Oct 2, 2026</td><td>Q1 FY2027 10-Q</td></tr><tr><td>Shares</td><td>374.3M at Oct 15, 2026 (up from 360.5M in August as convertible notes were converted)</td><td>10-Q; FY2026 10-K</td></tr><tr><td>Operating income</td><td>FY2024 −$0.4B · FY2025 $2.3B · FY2026 $4.5B</td><td>FY2026 10-K</td></tr><tr><td>Net income</td><td>FY2026 $9.4B, well above operating income</td><td>FY2026 10-K</td></tr><tr><td>Buybacks</td><td>FY2025 $0.15B · FY2026 $2.6B</td><td>FY2026 10-K</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>Because the filings do not support a reliable multi-year operating forecast for a company this cyclical or lumpy, the value is the present value of a flat perpetual stream of FCF (after share-based pay) at four levels taken directly from the filings, plus cash less debt, divided by shares. No growth is assumed (g = 0). Net cash is cash and equivalents less the carrying amount of debt.</p>
+<p>The four levels are: <strong>Bear</strong> = the weakest of the last three fiscal years (floored at zero); <strong>Conservative</strong> = the median year; <strong>Base</strong> = the 3-year average; <strong>Run-rate</strong> = the latest filed quarter(s) annualized. Present value = FCF ÷ discount rate.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario (FCF after share-based pay, $B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Run-rate — latest quarter(s) annualized (Q1 FY27 × 4): $5.2B</td><td>$175</td><td>$156</td><td>$140</td><td>$127</td><td>$117</td></tr><tr><td>Base — 3-year average: $1.1B</td><td>$38</td><td>$34</td><td>$30</td><td>$28</td><td>$25</td></tr><tr><td>Conservative — median year: $1.0B</td><td>$35</td><td>$31</td><td>$28</td><td>$26</td><td>$24</td></tr><tr><td>Bear — weakest year (floored at 0): $0.0B</td><td>$1</td><td>$1</td><td>$1</td><td>$1</td><td>$1</td></tr></tbody></table>
+<p>For comparison, the Oct 23, 2026 price was $343.54. At a 10% discount rate and no growth, the price implies a constant FCF of about $12.8B per year after share-based pay. Because net cash is small, almost all of the value comes from the FCF level chosen.</p>
+<h2>Sensitivity to the FCF level</h2>
+<table><thead><tr><th>FCF level ($B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>$0.5B</td><td>$18</td><td>$16</td><td>$15</td><td>$14</td><td>$13</td></tr><tr><td>$1.0B</td><td>$35</td><td>$31</td><td>$28</td><td>$26</td><td>$24</td></tr><tr><td>$1.1B</td><td>$38</td><td>$34</td><td>$31</td><td>$28</td><td>$26</td></tr><tr><td>$3.3B</td><td>$112</td><td>$99</td><td>$90</td><td>$82</td><td>$75</td></tr><tr><td>$5.2B</td><td>$175</td><td>$156</td><td>$140</td><td>$128</td><td>$117</td></tr><tr><td>$8.0B</td><td>$269</td><td>$239</td><td>$215</td><td>$196</td><td>$179</td></tr><tr><td>$12.0B</td><td>$402</td><td>$358</td><td>$322</td><td>$293</td><td>$269</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul><li>Net income of $9.4B is far above operating income of $4.5B, which suggests large non-operating gains, possibly tied to the 2025 Sandisk spin-off. I could not verify the size of any retained investment from the data available, so none is counted here; if WDC holds sellable stakes, value would be higher.</li><li>Fiscal 2024 and 2025 figures are as restated for continuing operations (the HDD business) in the FY2026 10-K.</li><li>The 3.00% convertible notes were largely converted in the quarter; the remaining $141M is treated as debt.</li><li>Cash and debt are taken at the dates shown; any growth beyond flat FCF is excluded, so a company that keeps compounding will be worth more than shown.</li><li>Value is as of the latest filed balance sheet.</li></ul>
+<p>These are mechanical estimates from reported data, not investment advice; I am not a financial advisor.</p>
+<h2>Sources</h2>
+<ul><li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000106040&type=10-K">Western Digital Form 10-K for fiscal 2026 (filed Aug 14, 2026) and Form 10-Q (filed Oct 22, 2026)</a></li><li>Price: Robinhood quote, Oct 23, 2026 close (comparison only)</li></ul>
+</section></main>
   </body>
 </html>

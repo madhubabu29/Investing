@@ -8,8 +8,9 @@
   </head>
   <body>
     <header>
-      <h1>MU (Micron Technology) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from Micron's financial statements.</p>
+      <h1>MU (Micron) — DCF Valuation</h1>
+      <p>Discounted cash flow analysis built only from Micron's own filings.</p>
+      <p><small>Last updated: October 24, 2026 · prices as of Oct 23, 2026 close · filings through the latest 10-K/10-Q</small></p>
     </header>
 
     <nav>
@@ -57,152 +58,41 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$877.57<br /><small>Aug 7, 2026 · NASDAQ</small></p>
-        </article>
-        <article class="card">
-          <h3>FY2025 Actual FCF</h3>
-          <p>$1,668M<br /><small>OpCF $17,525M − CapEx $15,857M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>10.5%<br /><small>estimates range 9.4%–23.2%</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Cash</h3>
-          <p>$19.3B<br /><small>$17.07/share · as of May 28, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals, fiscal year ends ~early September)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fiscal Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FY2021</td>
-              <td>27,705</td>
-              <td>2,438</td>
-              <td>8.8%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>FY2022</td>
-              <td>30,758</td>
-              <td>3,114</td>
-              <td>10.1%</td>
-              <td>11.0%</td>
-            </tr>
-            <tr>
-              <td>FY2023</td>
-              <td>15,540</td>
-              <td>−6,117</td>
-              <td>−39.4%</td>
-              <td>−49.5%</td>
-            </tr>
-            <tr>
-              <td>FY2024</td>
-              <td>25,111</td>
-              <td>121</td>
-              <td>0.5%</td>
-              <td>61.6%</td>
-            </tr>
-            <tr>
-              <td>FY2025</td>
-              <td>37,378</td>
-              <td>1,668</td>
-              <td>4.5%</td>
-              <td>48.8%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Micron designs and manufactures memory and storage semiconductors — DRAM (including High Bandwidth Memory, HBM, used in AI accelerators) and NAND flash — sold to PC, mobile, datacenter, and automotive customers. It's one of only three major DRAM makers globally alongside Samsung and SK Hynix, which gives it real pricing power whenever the market tightens.</p>
-
-        <h2>The defining challenge for this DCF — extreme cyclicality, mid-historic upswing</h2>
-        <p>Memory is a brutally cyclical, capital-intensive commodity business, and the 5-year table above shows both extremes. FY2023 is what a downcycle looks like: revenue nearly halved and FCF went to −$6.1B as DRAM/NAND prices crashed on oversupply. FY2025–2026 is the opposite extreme: AI datacenter buildout has created a severe DRAM/HBM shortage — Micron's HBM capacity is completely sold out through 2026 — and fiscal Q3 2026 alone (Feb–May 2026) generated $41.46B of revenue, more than all of FY2025 combined, with gross margin surging from 39% to roughly 81% year over year. Trailing-twelve-month FCF (through Q3 FY2026) is approximately $26.2B — about 16 times FY2025's figure. Picking a "normal" FCF base here is almost a meaningless exercise; the company has swung from crisis to windfall in three years.</p>
-
-        <h2>The debt picture</h2>
-        <p>Micron has aggressively deleveraged during the upcycle. Total debt (including capital leases) fell from $14.6B at FY2025 year-end (Aug 28, 2025) to just $5.7B by Q3 FY2026 (May 28, 2026), while cash surged from $9.6B to $25.0B over the same nine months — flipping the balance sheet from $4.9B net debt to $19.3B net cash. WACC estimates vary enormously across sources (9.4% to 23.2%) — a reflection of just how volatile the stock has been amid this swing; the elevated end likely reflects current beta rather than a stable long-run cost of capital.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>Given how extreme the range of plausible "normal" FCF is here, each scenario anchors on a very different base: the current TTM run-rate, a blend of TTM and the pre-supercycle FY2025 actual, and the 5-year average (which is dragged to near zero by the FY2023 crash). Every scenario adds net cash ($19.27B) and divides by 1,129.4M shares.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$26,172M (TTM)</td>
-              <td>$13,920M (TTM/FY2025 blend)</td>
-              <td>$245M (5-yr avg)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>3%</td>
-              <td>0%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>1%</td>
-              <td>0%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>10.5% / 2%</td>
-              <td>15% / 1.5%</td>
-              <td>23.2% / 1%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$298.97</td>
-              <td>$101.83</td>
-              <td>$18.01</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($877.57)</td>
-              <td>−66%</td>
-              <td>−88%</td>
-              <td>−98%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>This is the mirror image of most other pages on this site: here, even the bullish base case falls dramatically short of the market price. Using the extraordinary current TTM FCF as a perpetual base with continued (moderating) growth only supports $299/share — 66% below today's $877.57. Pushed further: annualizing the single record Q3 FY2026 quarter ($17.6B of quarterly FCF × 4) and holding it flat forever at a 10.5% discount rate only reaches about $666/share, still 24% below market. The market isn't just pricing in the current supercycle persisting — it's pricing in further growth from here (continued HBM/DRAM price increases, capacity additions, the HBM4 ramp), a bet that historically boom-bust memory markets have never sustained indefinitely.</p>
-
-        <p><strong>Caveat:</strong> DCF is a poor natural fit for a company in the middle of what may be a once-in-a-cycle structural shift (AI-driven memory demand) layered on top of an already famously cyclical industry. The gap between the crash-level bear case and the supercycle base case is enormous by design — these scenarios bracket genuine uncertainty about whether this cycle is structurally different, not a forecast of which one is right. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Micron FY2025 10-K (SEC EDGAR, accession 0000723125-25-000028)</li>
-          <li>Micron Q3 FY2026 10-Q (SEC EDGAR, accession 0000723125-26-000015)</li>
-          <li>Micron Technology, Inc. Reports Record Results for the Third Quarter of Fiscal 2026 (investors.micron.com)</li>
-          <li>GuruFocus, valueinvesting.io — MU WACC</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$877.11<br /><small>Oct 23, 2026 close</small></p></article>
+<article class="card"><h3>Net cash</h3><p>$35.6B<br /><small>$31.4/share · Sep 3, 2026</small></p></article><article class="card"><h3>FY2026 FCF after SBC</h3><p>$57.6B<br /><small>OpCF $89.7B − capex $30.7B − SBC $1.3B</small></p></article><article class="card"><h3>Shares</h3><p>1,131M<br /><small>Oct 2, 2026</small></p></article>
+</section>
+<section><h2>Model-based rating: HOLD — very high risk</h2>
+<p>Rule used: BUY if the price is below the base-case value at 10%; HOLD if it is between the base and run-rate values; NOT A BUY if it is above the run-rate value. At 10%, Micron's base value is $201 and its run-rate value is $1,180. The $877 price sits between them: it needs roughly $95.7B of free cash flow every year, forever, against $57.6B in fiscal 2026 and a fourth-quarter run-rate near $129.9B. In other words, the market is paying for the current memory boom to last, not for the through-cycle average.</p>
+<p><strong>What would change this:</strong> a price below about $200 would be a BUY on the 3-year average, while annualized FCF falling back toward $20B would argue for caution. <strong>Main risk to the rating:</strong> fiscal 2024 FCF was negative $0.7B after share-based pay, and fiscal 2025 was only $0.7B. FCF went from −$0.7B to +$57.6B in two years, so any value here is dominated by the cycle assumption.</p>
+<p><small>Mechanical output of the model, not personalized investment advice; I am not a financial advisor.</small></p></section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Micron's SEC filings (10-K and 10-Q data as filed). The earlier version used a third-party WACC estimate, and it did not deduct share-based pay. The filings contain no cost of capital, so values are shown across an 8%–12% range, with the market price shown only as a comparison. Share-based compensation is treated as a real cost: FCF here is operating cash flow − capital spending − share-based compensation.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Fiscal year</th><th>Operating cash flow</th><th>Capex</th><th>Share-based pay</th><th>FCF after SBC</th></tr></thead><tbody><tr><td>FY2024</td><td>$8.5B</td><td>$8.4B</td><td>$0.8B</td><td>−$0.7B</td></tr><tr><td>FY2025</td><td>$17.5B</td><td>$15.9B</td><td>$1.0B</td><td>$0.7B</td></tr><tr><td>FY2026</td><td>$89.7B</td><td>$30.7B</td><td>$1.3B</td><td>$57.6B</td></tr><tr><td>FY2026 Q4 (derived)</td><td>$44.0B</td><td>$11.1B</td><td>$0.4B</td><td>$32.5B</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Net cash</td><td>Cash and equivalents $38.4B − notes $2.8B face (finance leases not included)</td><td>FY2026 10-K, Sep 3, 2026</td></tr><tr><td>Shares</td><td>1,131.4M</td><td>FY2026 10-K cover, Oct 2, 2026</td></tr><tr><td>Operating income</td><td>FY2024 $1.3B · FY2025 $9.8B · FY2026 $99.3B</td><td>FY2026 10-K</td></tr><tr><td>Buybacks</td><td>FY2024 $0.3B · FY2025 $0 · FY2026 $0.65B</td><td>FY2026 10-K</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>Because the filings do not support a reliable multi-year operating forecast for a company this cyclical or lumpy, the value is the present value of a flat perpetual stream of FCF (after share-based pay) at four levels taken directly from the filings, plus cash less debt, divided by shares. No growth is assumed (g = 0). Net cash is cash and equivalents less the face value of the notes.</p>
+<p>The four levels are: <strong>Bear</strong> = the weakest of the last three fiscal years (floored at zero); <strong>Conservative</strong> = the median year; <strong>Base</strong> = the 3-year average; <strong>Run-rate</strong> = the latest filed quarter(s) annualized. Present value = FCF ÷ discount rate.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario (FCF after share-based pay, $B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Run-rate — latest quarter(s) annualized (Q4 FY26 × 4): $129.9B</td><td>$1,467</td><td>$1,307</td><td>$1,180</td><td>$1,075</td><td>$988</td></tr><tr><td>Base — 3-year average: $19.2B</td><td>$244</td><td>$220</td><td>$201</td><td>$186</td><td>$173</td></tr><tr><td>Conservative — median year: $0.7B</td><td>$39</td><td>$38</td><td>$38</td><td>$37</td><td>$37</td></tr><tr><td>Bear — weakest year (floored at 0): $0.0B</td><td>$31</td><td>$31</td><td>$31</td><td>$31</td><td>$31</td></tr></tbody></table>
+<p>For comparison, the Oct 23, 2026 price was $877.11. At a 10% discount rate and no growth, the price implies a constant FCF of about $95.7B per year after share-based pay. The base value is far below the price because fiscal 2024 and 2025 were near zero.</p>
+<h2>Sensitivity to the FCF level</h2>
+<table><thead><tr><th>FCF level ($B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>$0.7B</td><td>$39</td><td>$38</td><td>$38</td><td>$37</td><td>$37</td></tr><tr><td>$10.0B</td><td>$142</td><td>$130</td><td>$120</td><td>$112</td><td>$105</td></tr><tr><td>$19.2B</td><td>$244</td><td>$220</td><td>$201</td><td>$186</td><td>$173</td></tr><tr><td>$32.5B</td><td>$390</td><td>$351</td><td>$319</td><td>$293</td><td>$271</td></tr><tr><td>$57.6B</td><td>$668</td><td>$597</td><td>$541</td><td>$494</td><td>$456</td></tr><tr><td>$96.0B</td><td>$1,092</td><td>$974</td><td>$880</td><td>$803</td><td>$739</td></tr><tr><td>$130.0B</td><td>$1,468</td><td>$1,308</td><td>$1,180</td><td>$1,076</td><td>$989</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul><li>The fourth-quarter run-rate is derived by subtracting the nine-month figures in the 10-Q from the full-year figures in the 10-K; it is a single quarter at record memory prices.</li><li>Capital spending was $30.7B in fiscal 2026, up from $15.9B, so FCF already reflects heavy investment.</li><li>Revenue was not available from the filing data tool, so no revenue history is shown.</li><li>Cash and debt are taken at the dates shown; any growth beyond flat FCF is excluded, so a company that keeps compounding will be worth more than shown.</li><li>Value is as of the latest filed balance sheet.</li></ul>
+<p>These are mechanical estimates from reported data, not investment advice; I am not a financial advisor.</p>
+<h2>Sources</h2>
+<ul><li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000723125&type=10-K">Micron Form 10-K for fiscal 2026 (filed Oct 9, 2026) and Forms 10-Q</a></li><li>Price: Robinhood quote, Oct 23, 2026 close (comparison only)</li></ul>
+</section></main>
   </body>
 </html>
