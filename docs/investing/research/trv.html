@@ -8,8 +8,9 @@
   </head>
   <body>
     <header>
-      <h1>TRV (The Travelers Companies) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from Travelers' financial statements.</p>
+      <h1>TRV (Travelers) — DCF Valuation</h1>
+      <p>Valuation built only from The Travelers Companies' own filings.</p>
+      <p><small>Last updated: November 21, 2026 · price as of Nov 20, 2026 close · filings through the Q3 2026 10-Q (quarter ended Sep 30, 2026)</small></p>
     </header>
 
     <nav>
@@ -49,161 +50,46 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$369.90<br /><small>Aug 28, 2026 · NYSE</small></p>
-        </article>
-        <article class="card">
-          <h3>TTM FCF</h3>
-          <p>$8,303M<br /><small>Net income, insurer proxy — TTM through Jun 30, 2026</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>7.0%<br /><small>CAPM-derived; beta 0.46</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Debt</h3>
-          <p>$6,558M<br /><small>-$31.44/share (holding-co basis) · as of Jun 30, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2021</td>
-              <td>34,816</td>
-              <td>3,662</td>
-              <td>10.5%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>2022</td>
-              <td>36,884</td>
-              <td>2,842</td>
-              <td>7.7%</td>
-              <td>5.9%</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>41,364</td>
-              <td>2,991</td>
-              <td>7.2%</td>
-              <td>12.1%</td>
-            </tr>
-            <tr>
-              <td>2024</td>
-              <td>46,423</td>
-              <td>4,999</td>
-              <td>10.8%</td>
-              <td>12.2%</td>
-            </tr>
-            <tr>
-              <td>2025</td>
-              <td>48,828</td>
-              <td>6,288</td>
-              <td>12.9%</td>
-              <td>5.2%</td>
-            </tr>
-          </tbody>
-        </table>
-        <p><small>"FCF" here is net income attributable to shareholders, not OpCF minus CapEx — see the DCF-inputs and Caveat sections below for why.</small></p>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Travelers is one of the largest US property and casualty insurers, underwriting through three segments. Business Insurance is the largest (about 51% of FY2025 net written premiums), selling commercial property, general liability, workers' compensation, commercial auto and related coverages to businesses ranging from small accounts to large national customers, plus a corporate-member Lloyd's operation in the UK. Personal Insurance (about 39% of net written premiums) covers individuals' auto and homeowners risk, primarily in the US and Canada. Bond &amp; Specialty Insurance (about 10%) is the smallest but most consistently profitable segment, writing surety, fidelity, management liability and professional liability coverage — a business with structurally lower loss ratios than property-catastrophe-exposed lines. Travelers distributes almost entirely through independent agents and brokers rather than a direct or captive-agent model, underwrote $48.8B of FY2025 total revenue with about 34,000 employees, and has paid a dividend every year since its predecessor companies were founded in 1853 — it is a Dow Jones Industrial Average component and one of the "big three" US personal/commercial P&amp;C insurers alongside Progressive and Chubb/Allstate-scale peers.</p>
-
-        <h2>The defining challenge for this DCF — a record-profit, peak-of-cycle insurer priced at a single-digit earnings multiple</h2>
-        <p>Travelers is having an unusually good run: Q2 2026 net income of $2.208 billion was up 46% year over year, core ROE hit 24.9% (27.1% unadjusted), and the consolidated combined ratio improved to 83.6% from 90.3% a year earlier as catastrophe losses fell to $518M pre-tax from $927M. Every segment improved — Business Insurance's combined ratio dropped 680 basis points to 86.8%, Personal Insurance to 79.5% from 88.4% (continuing its recovery from the 2022–2023 inflation-driven personal-auto loss spike), and Bond &amp; Specialty stayed in the low 80s. Yet the stock trades at only about 9.9x trailing earnings and 2.3x book value — cheap multiples for a company posting a high-20s percent ROE. The tension is that current earnings are themselves a cyclical high: FY2025's record $6.288B net income (up 26%) came despite $3.7B of catastrophe losses, the largest in company history, driven mostly by the January 2025 Los Angeles-area wildfires, whose Q1 2025 impact alone was $2.266 billion pre-tax and drove Personal Insurance to a $374M segment loss and a 115.2% combined ratio that quarter. The market's low multiple is a bet that today's benign 2026 catastrophe experience, favorable reserve development and elevated investment income won't persist at this pace — that a mechanical DCF extrapolating trailing net income forward would badly overstate intrinsic value, because insurer earnings mean-revert around a cost-of-capital-level ROE, not around whatever the most recent quarter happened to produce.</p>
-
-        <h2>The debt picture</h2>
-        <p>Travelers is a P&amp;C insurer, so most of its balance sheet is an investment portfolio backing policyholder reserves — that portfolio isn't shareholders' distributable cash and isn't netted here. What matters for a net-debt adjustment is the holding company's own funded debt and liquid resources: as of June 30, 2026, Travelers had $9.068 billion of total debt outstanding (senior notes and junior subordinated debentures, a 21.5% debt-to-total-capital ratio) against $2.51 billion of holding company liquidity, for a net debt of roughly $6.56 billion, or -$31.44/share. Beta is low at 0.46 — typical of a well-capitalized, long-tenured P&amp;C insurer with a diversified book — putting the CAPM cost of equity, used here as WACC, at 4.7% + 0.46 × 5% ≈ 7.0%. That low discount rate combined with a currently elevated earnings base is exactly why the base-case DCF below produces such an extreme result: this page uses net income attributable to shareholders as the FCF proxy throughout, because operating cash flow minus capex — this site's usual FCF definition — is dominated by investment-portfolio purchases/sales and premium/claims float timing for an insurer, not capex, and doesn't represent distributable economic profit. Net income is the standard practitioner shortcut here, closer to what a dividend-discount or residual-income model would use, but it inherits all of an insurer's earnings cyclicality — which is precisely the problem the scenarios below are built to expose.</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>Because insurer earnings swing hard between catastrophe-light and catastrophe-heavy years, each scenario deliberately anchors on a different point in that cycle. The base case takes the TTM net income run-rate ($8.30B, through Q2 2026) — a genuine but cyclically elevated figure reflecting low catastrophe losses and strong reserve releases — and grows it at a pace loosely tracking the last two years' momentum before decaying. The conservative case uses the 5-year average net income ($4.16B), which blends the 2022–2023 hard-loss years with the 2024–2025 recovery and is a more defensible estimate of sustainable, through-cycle earnings power. The bear case anchors on FY2022's actual net income ($2.84B) — the trough of the inflation-driven personal-auto loss spike — with minimal growth, modeling a return to a harder catastrophe and loss-cost environment. Every scenario subtracts the same $6.56B of holding-company net debt and divides by 208.6M shares outstanding.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$8,303M (TTM)</td>
-              <td>$4,156.4M (5-yr avg)</td>
-              <td>$2,842M (FY2022)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>6%</td>
-              <td>4%</td>
-              <td>1%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>4%</td>
-              <td>3%</td>
-              <td>1%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>7.0% / 3%</td>
-              <td>8.0% / 2.5%</td>
-              <td>9.0% / 1.5%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$1,184.88</td>
-              <td>$371.96</td>
-              <td>$146.34</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($369.90)</td>
-              <td>+220%</td>
-              <td>+1%</td>
-              <td>-60%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>The base case's +220% result isn't a signal that Travelers is dramatically undervalued — it's a demonstration of why insurers aren't usually valued this way. Compounding a cyclically elevated TTM net income figure at even modest growth, discounted at a genuinely low 7.0% WACC justified by a 0.46 beta, produces an equity value several multiples of the current $77B market cap; the market obviously isn't buying that read. What's striking is how closely the conservative case — 5-year average net income, moderate growth, a full point of extra WACC — lands to today's $369.90 price: $371.96, essentially a match. That suggests the market is pricing something close to Travelers' smoothed, through-cycle earnings power, discounting the current run of benign catastrophe experience and reserve releases as unlikely to persist indefinitely, rather than pricing the company as cheap. The bear case, a reversion to 2022-style hard-market loss costs, sits 60% below — a reminder that the January 2025 wildfires already showed how quickly a single catastrophe event can erase a quarter's underwriting gains, and that the current 83–92% combined ratios are closer to a best-case underwriting environment than a baseline one.</p>
-
-        <p><strong>Caveat:</strong> This page substitutes net income attributable to shareholders for this site's usual FCF definition (operating cash flow minus capex), because that OpCF/capex measure is not meaningful for a P&amp;C underwriter — its operating cash flow is dominated by investment-portfolio purchases and sales and by premium/claims float timing, not capital spending. Net income is a standard practitioner proxy for distributable earnings at an insurer, but it is far more volatile than a typical company's FCF and highly sensitive to catastrophe-loss timing and reserve development, which this DCF's smooth growth curves cannot capture. More conventional approaches to valuing insurers — price-to-book relative to sustainable ROE, or a residual-income/excess-return model — are generally considered more reliable for this industry than a net-income DCF; this analysis is offered as a rough cross-check, not a replacement. The net-debt figure also nets only holding-company funded debt against holding-company liquidity, excluding the full investment portfolio (which backs policyholder reserves and is not shareholders' distributable cash) — an approximation, not a complete balance-sheet netting. DCF is also extremely sensitive to the terminal growth rate and WACC assumed. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>The Travelers Companies FY2025 10-K, fiscal year ended December 31, 2025 (SEC EDGAR, accession 0000086312-26-000065, filed Feb 12, 2026)</li>
-          <li>The Travelers Companies Q2 2026 10-Q, quarter ended June 30, 2026 (SEC EDGAR, accession 0000086312-26-000145, filed Jul 17, 2026)</li>
-          <li>The Travelers Companies Q1 2026 10-Q, quarter ended March 31, 2026 (SEC EDGAR, filed Apr 16, 2026)</li>
-          <li>Travelers "Reports Excellent Second Quarter and Year-to-Date Results" press release, Jul 15, 2026 (investor.travelers.com / BusinessWire)</li>
-          <li>Travelers "Reports Excellent First Quarter Results" press release, Apr 16, 2026 (investor.travelers.com / BusinessWire)</li>
-          <li>Travelers "Reports Excellent Fourth Quarter and Full Year Results" press release, Jan 19, 2026 (investor.travelers.com / BusinessWire)</li>
-          <li>Travelers "Reports Excellent Third Quarter and Year-to-Date Results" press release, Oct 16, 2025 (investor.travelers.com)</li>
-          <li>Travelers "Announces Preliminary Catastrophe Loss Estimate for January 2025 California Wildfires" press release, Feb 10, 2025 (investor.travelers.com / BusinessWire)</li>
-          <li>Travelers Q1 2025 results reporting, Apr 16, 2025 (Insurance Journal — "Travelers Income Drops 65% on Catastrophe Losses, Primarily California Wildfires")</li>
-          <li>Travelers FY2022/FY2021 full-year results press releases (investor.travelers.com, Jan 2023 and Jan 2022)</li>
-          <li>stockanalysis.com — TRV price, shares outstanding, beta, historical revenue and net income</li>
-          <li>Robinhood equity fundamentals and quotes — TRV market cap, shares outstanding, P/E, P/B, 52-week range (Aug 28, 2026)</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid"><article class="card"><h3>Price (comparison only)</h3><p>$393.24<br /><small>Nov 20, 2026 close</small></p></article><article class="card"><h3>Debt</h3><p>$9.8B<br /><small>25% of debt plus equity · Sep 30, 2026</small></p></article><article class="card"><h3>TTM net income</h3><p>$8.3B<br /><small>Twelve months to Sep 30, 2026</small></p></article><article class="card"><h3>Shares</h3><p>204.9M<br /><small>Oct 9, 2026 (10-Q cover)</small></p></article></section>
+<section><h2>Model-based rating: HOLD — moderate risk</h2>
+<p><strong>Method for an insurer:</strong> I did not use free cash flow, because an insurer's operating cash flow mostly reflects premiums collected before claims are paid (the "float"), not profit available to shareholders. For example, 2025 operating cash flow was $10.6B against net income of $6.3B. Instead, the page values Travelers on net income after share-based pay, interest and taxes, discounted at 10% as a cost of equity. Debt is therefore not subtracted. Rule used for cyclical companies, applied to net income: BUY if the price is below the base-case value at 10%; HOLD if it is between the base and run-rate values; NOT A BUY if it is above the run-rate value; SELL if it is more than twice the run-rate value (about $813).</p>
+<p>At 10%, Travelers' base value (3-year average net income of $4.8B) is $232 a share and its run-rate value (twelve months to Sep 30, 2026, $8.3B) is $407. The $393.24 price is between them, about 3% below the run-rate value. It needs about $8.1B of net income every year, forever, against $8.3B over the last twelve months. That is a price-to-earnings ratio of 9.7 on the latest twelve months and 2.8 times book value.</p>
+<p><strong>What would change this:</strong> a price above about $407 would be NOT A BUY, a price below about $232 a BUY, and a price above about $813 a SELL. Net income falling to about $8.1B would put the price at fair value. <strong>Main risk to the rating:</strong> the last twelve months were flattered by light catastrophe losses ($1.82B in nine months of 2026 against $3.60B in 2025) and by $1.23B of favorable prior-year reserve development. Net income was only $3.0B in 2023, and a normal or heavy storm year would cut the run-rate figure sharply (see the sensitivity table).</p>
+<p><small>Mechanical output of the model, not personalized investment advice; I am not a financial advisor.</small></p></section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Travelers' SEC filings (the 2025 10-K and the Q3 2026 10-Q). The earlier version used a CAPM-derived cost of capital (from a beta of 0.46) and an older price. The filings contain no cost of capital, so values are shown across an 8%–12% range, with the market price used only as a comparison. Net income is used rather than free cash flow for the reason above, and share-based compensation is already an expense in it.</p>
+<p>Debt is $9.8B at Sep 30, 2026 (including a $750M issue of 4.95% notes due 2031 on Jul 24, 2026; a $200M 7.75% note was repaid on Apr 15), or 25% of debt plus shareholders' equity. Equity is lower than at year-end because of rising interest rates, not losses: shareholders' equity fell from $32.9B to $29.0B, with $4.6B of other comprehensive loss (unrealized losses on bonds) and $4.6B of buybacks outweighing $5.8B of net income. If you prefer companies with little or no debt, Travelers carries a moderate amount: about 1.2 times twelve-month net income, but it is a financial company, and debt-to-capital is the usual yardstick.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Period</th><th>Net income</th><th>Catastrophe losses</th><th>Net favorable prior-year reserve development</th><th>Operating cash flow (reference)</th></tr></thead><tbody><tr><td>2023</td><td>$2,991M</td><td>—</td><td>—</td><td>—</td></tr><tr><td>2024</td><td>$4,999M</td><td>$3.34B</td><td>$0.71B</td><td>—</td></tr><tr><td>2025</td><td>$6,288M</td><td>$3.69B</td><td>$1.04B</td><td>$10.61B</td></tr><tr><td>Nine months 2025</td><td>$3,792M</td><td>$3.60B</td><td>$0.72B</td><td>$7.92B</td></tr><tr><td>Nine months 2026</td><td>$5,836M</td><td>$1.82B</td><td>$1.23B</td><td>$7.99B</td></tr><tr><td>Twelve months to Sep 30, 2026 (derived)</td><td>$8,332M</td><td>—</td><td>—</td><td>—</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody>
+<tr><td>Shareholders' equity</td><td>$28,995M at Sep 30, 2026 ($32,894M at Dec 31, 2025). Accumulated other comprehensive loss $7,063M ($2,500M at Dec 31, 2025); gross unrealized losses on available-for-sale bonds $8,078M ($2,849M)</td><td>Q3 2026 10-Q</td></tr>
+<tr><td>Debt</td><td>$9,813M at Sep 30, 2026 ($9,267M at Dec 31, 2025); new five-year $1.2B revolving credit agreement from May 15, 2026</td><td>Q3 2026 10-Q</td></tr>
+<tr><td>Shares</td><td>204.9M at Oct 9, 2026 (208.6M at Jul 10, 2026)</td><td>Q3 2026 10-Q covers</td></tr>
+<tr><td>Revenue and investments</td><td>Revenue 2025 $48.8B; nine months 2026 $36.5B vs $36.4B. Net investment income nine months 2026 $3.18B vs $2.91B. Total investments $100.6B</td><td>2025 10-K; Q3 2026 10-Q</td></tr>
+<tr><td>Segment income</td><td>Segment income (excludes after-tax realized gains and losses) was $6,107M in nine months of 2026 vs $4,084M, compared with net income of $5,836M vs $3,792M</td><td>Q3 2026 10-Q</td></tr>
+<tr><td>Shareholder returns</td><td>Nine months 2026: buybacks $4,585M + dividends $759M = $5,344M, against net income of $5,836M. $2.42B of repurchase capacity remained at Sep 30. Quarterly dividend $1.25 (Q3 2025: $1.10)</td><td>Q3 2026 10-Q</td></tr>
+<tr><td>Divestiture</td><td>Canadian personal and most commercial business sold to Definity Financial, closed Jan 2, 2026; $1,627M of net reserves disposed of. The filing text I read gave no sale gain or loss</td><td>Q3 2026 10-Q</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>Value per share = net income ÷ discount rate ÷ shares (flat perpetuity, g = 0). Net income is after interest, so debt is not subtracted. Four earnings levels are taken directly from the filings: <strong>Bear</strong> = the weakest of 2023–2025; <strong>Conservative</strong> = the median year; <strong>Base</strong> = the 3-year average; <strong>Run-rate</strong> = the twelve months to Sep 30, 2026, calculated as 2025 plus nine months of 2026 minus nine months of 2025.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario (net income, $B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Run-rate — twelve months to Sep 30, 2026: $8.3B</td><td>$508</td><td>$452</td><td>$407</td><td>$370</td><td>$339</td></tr><tr><td>Base — 3-year average (2023–2025): $4.8B</td><td>$290</td><td>$258</td><td>$232</td><td>$211</td><td>$194</td></tr><tr><td>Conservative — median year (2024): $5.0B</td><td>$305</td><td>$271</td><td>$244</td><td>$222</td><td>$203</td></tr><tr><td>Bear — weakest year (2023): $3.0B</td><td>$182</td><td>$162</td><td>$146</td><td>$133</td><td>$122</td></tr></tbody></table>
+<p>For comparison, the Nov 20, 2026 price was $393.24. At a 10% discount rate and no growth, the price implies constant net income of about $8.1B per year.</p>
+<h2>Sensitivity to the net income level</h2>
+<table><thead><tr><th>Net income level ($B/yr)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>$2.5B</td><td>$152</td><td>$136</td><td>$122</td><td>$111</td><td>$102</td></tr><tr><td>$3.0B</td><td>$183</td><td>$163</td><td>$146</td><td>$133</td><td>$122</td></tr><tr><td>$4.0B</td><td>$244</td><td>$217</td><td>$195</td><td>$177</td><td>$163</td></tr><tr><td>$5.0B</td><td>$305</td><td>$271</td><td>$244</td><td>$222</td><td>$203</td></tr><tr><td>$6.3B</td><td>$384</td><td>$342</td><td>$307</td><td>$279</td><td>$256</td></tr><tr><td>$8.1B</td><td>$492</td><td>$437</td><td>$393</td><td>$357</td><td>$328</td></tr><tr><td>$10.0B</td><td>$610</td><td>$542</td><td>$488</td><td>$444</td><td>$407</td></tr><tr><td>$12.0B</td><td>$732</td><td>$651</td><td>$586</td><td>$532</td><td>$488</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul><li>Net income is not cash available to shareholders: insurers must hold capital against their risks, so only part of earnings can be paid out. In the first nine months of 2026, Travelers returned $5.3B (buybacks plus dividends), roughly its net income, while equity shrank because of the bond-price decline.</li><li>The run-rate period had light catastrophe losses and strong favorable reserve development. Both can reverse.</li><li>The twelve-month figure includes the fourth quarter of 2025, when the Canadian business that was sold on Jan 2, 2026 was still owned, so earnings going forward may be somewhat lower.</li><li>Net income includes realized investment gains and losses (about a $271M net loss after tax in nine months of 2026, taken as segment income less net income).</li><li>The unrealized bond losses ($8.1B gross) do not run through net income unless the bonds are sold or impaired, but they reduce shareholders' equity and so the capital available for buybacks.</li><li>Any growth beyond flat earnings is excluded, so a company that keeps growing premiums and investment income will be worth more than shown; future share buybacks are not modeled either (the share count used is the latest on the 10-Q cover).</li></ul>
+<p>These are mechanical estimates from reported data, not investment advice; I am not a financial advisor.</p>
+<h2>Sources</h2>
+<ul><li><a href="https://www.sec.gov/Archives/edgar/data/0000086312/000008631226000181/trv-20260930.htm">Travelers Form 10-Q for the quarter ended Sep 30, 2026</a></li><li><a href="https://www.sec.gov/Archives/edgar/data/86312/000008631226000065/trv-20251231.htm">Travelers Form 10-K for fiscal 2025 (filed Feb 12, 2026)</a></li><li>Price: Nov 20, 2026 close, supplied by the site owner (comparison only)</li></ul>
+</section></main>
   </body>
 </html>
