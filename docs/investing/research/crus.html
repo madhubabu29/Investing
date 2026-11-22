@@ -9,7 +9,8 @@
   <body>
     <header>
       <h1>CRUS (Cirrus Logic) — DCF Valuation</h1>
-      <p>Discounted cash flow analysis using actual data from Cirrus Logic's financial statements.</p>
+      <p>Discounted cash flow analysis built only from Cirrus Logic's own filings.</p>
+      <p><small>Last updated: November 21, 2026 · price as of Nov 20, 2026 close · filings through the Q2 fiscal 2027 10-Q (Sep 26, 2026)</small></p>
     </header>
 
     <nav>
@@ -49,151 +50,43 @@
     </nav>
 
     <main>
-      <section class="card-grid">
-        <article class="card">
-          <h3>Current Price</h3>
-          <p>$129.42<br /><small>Aug 7, 2026 · NASDAQ</small></p>
-        </article>
-        <article class="card">
-          <h3>FY2026 Actual FCF</h3>
-          <p>$636.6M<br /><small>OpCF $650.6M − CapEx $14.0M</small></p>
-        </article>
-        <article class="card">
-          <h3>WACC (base)</h3>
-          <p>9.28%<br /><small>estimates range 8.0%–11.58%</small></p>
-        </article>
-        <article class="card">
-          <h3>Net Cash</h3>
-          <p>$810.7M<br /><small>$16.18/share · as of Jun 27, 2026</small></p>
-        </article>
-      </section>
-
-      <section>
-        <h2>Historical financials (actuals, fiscal year ends late March)</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Fiscal Year</th>
-              <th>Revenue ($M)</th>
-              <th>FCF ($M)</th>
-              <th>FCF margin</th>
-              <th>Revenue growth</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FY2022</td>
-              <td>1,781.5</td>
-              <td>98.6</td>
-              <td>5.5%</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td>FY2023</td>
-              <td>1,897.6</td>
-              <td>304.5</td>
-              <td>16.0%</td>
-              <td>6.5%</td>
-            </tr>
-            <tr>
-              <td>FY2024</td>
-              <td>1,788.9</td>
-              <td>384.0</td>
-              <td>21.5%</td>
-              <td>−5.7%</td>
-            </tr>
-            <tr>
-              <td>FY2025</td>
-              <td>1,896.1</td>
-              <td>421.6</td>
-              <td>22.2%</td>
-              <td>6.0%</td>
-            </tr>
-            <tr>
-              <td>FY2026</td>
-              <td>1,997.4</td>
-              <td>636.6</td>
-              <td>31.9%</td>
-              <td>5.3%</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <section>
-        <h2>Business model</h2>
-        <p>Cirrus Logic designs mixed-signal and audio/power semiconductors — DSP-based audio codecs, amplifiers, haptics drivers, and power management ICs — used mostly in smartphones. It's fabless (manufacturing is outsourced to third-party foundries), which keeps capex very low relative to revenue.</p>
-
-        <h2>The defining challenge for this DCF — single-customer concentration</h2>
-        <p>Apple accounted for roughly 89% of Cirrus Logic's FY2025 revenue. This isn't ordinary market cyclicality; it's idiosyncratic single-customer risk that no amount of revenue growth can diversify away from quickly. Any shift by Apple — in-sourcing a chip category, redesigning a part out, reducing content per device, or simply a slowdown in iPhone unit volumes — flows straight through to Cirrus's results in a way that laptop and Android design wins haven't yet offset at scale. Separately, FY2026 FCF jumped 51% to $636.6M on just 5.3% revenue growth, driven mostly by a sharp drop in capex ($37.7M in FY2024 down to just $14.0M in FY2026). Because Cirrus is fabless, capex here mostly covers test equipment and design tools rather than a factory, so it swings a lot year to year — a single low-capex year can inflate FCF, which is why the scenarios below lean on the 5-year average as a check against the FY2026 figure alone.</p>
-
-        <h2>The debt picture</h2>
-        <p>Cirrus carries no debt — it has never taken on meaningful borrowings. As of the most recent quarter (June 27, 2026), cash was $810.7M against a share count that's been steadily shrinking via buybacks (51.03M shares a year ago down to 50.12M now).</p>
-
-        <h2>DCF inputs and results — three scenarios</h2>
-        <p>The base case uses the FY2026 FCF spike as its starting point; the conservative and bear cases use the smoothed 5-year average ($369.1M) instead, to check how dependent the valuation is on FY2026's unusually low capex holding. Every scenario adds net cash ($810.7M) and divides by 50.12M shares.</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Input</th>
-              <th>Base</th>
-              <th>Conservative</th>
-              <th>Bear</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>FCF base</td>
-              <td>$636.6M (FY2026)</td>
-              <td>$369.1M (5-yr avg)</td>
-              <td>$369.1M (5-yr avg)</td>
-            </tr>
-            <tr>
-              <td>Growth yr 1–5</td>
-              <td>6%</td>
-              <td>3%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>Growth yr 6–10</td>
-              <td>3%</td>
-              <td>1%</td>
-              <td>0%</td>
-            </tr>
-            <tr>
-              <td>WACC / terminal growth</td>
-              <td>9.28% / 3%</td>
-              <td>11.58% / 2%</td>
-              <td>14% / 1%</td>
-            </tr>
-            <tr>
-              <td>Intrinsic value / share</td>
-              <td>$253.07</td>
-              <td>$95.75</td>
-              <td>$70.02</td>
-            </tr>
-            <tr>
-              <td>vs. market price ($129.42)</td>
-              <td>+96%</td>
-              <td>−26%</td>
-              <td>−46%</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h2>The uncomfortable question the DCF raises</h2>
-        <p>Unlike the AI-supercycle names covered elsewhere on this site, CRUS lands in the more familiar middle ground: the market price sits between the conservative and base cases. Treating FY2026's FCF spike as the new normal implies $253/share, 96% above market — so the market clearly doesn't believe FY2026's outsized margin expansion is fully repeatable. Using the smoothed 5-year average instead, the conservative case ($95.75) is only 26% below market, meaning the market is pricing something between "FY2026 was an aberration" and "modest structural margin improvement persists." Notably, none of these three scenarios explicitly price the single biggest risk: an Apple design-out. That's a binary, idiosyncratic event a smooth DCF growth assumption structurally can't represent — it would need to be modeled as a probability-weighted scenario, not a growth rate.</p>
-
-        <p><strong>Caveat:</strong> DCF is extremely sensitive to the terminal growth rate and WACC, and here also to which FCF year is used as the base given how lumpy capex is for a fabless chipmaker. None of these scenarios capture customer-concentration tail risk. These are mechanical estimates from reported data, not investment advice.</p>
-
-        <h2>Sources</h2>
-        <ul>
-          <li>Cirrus Logic FY2026 10-K (SEC EDGAR, accession 0000772406-26-000018)</li>
-          <li>Cirrus Logic Q1 FY2027 10-Q (SEC EDGAR, accession 0000772406-26-000037)</li>
-          <li>GuruFocus, Alpha Spread, valueinvesting.io — CRUS WACC</li>
-        </ul>
-      </section>
-    </main>
+<section class="card-grid">
+<article class="card"><h3>Price (comparison only)</h3><p>$110.61<br /><small>Nov 20, 2026 close</small></p></article>
+<article class="card"><h3>Net cash</h3><p>$1,076M<br /><small>Cash and securities, no debt</small></p></article><article class="card"><h3>Twelve-month FCF after SBC</h3><p>$446M<br /><small>To Sep 26, 2026</small></p></article><article class="card"><h3>Shares</h3><p>49.9M<br /><small>Nov 2, 2026</small></p></article>
+<article class="card"><h3>Implied growth at 10%</h3><p>0.0% a year<br /><small>what the price assumes forever</small></p></article>
+</section>
+<section><h2>Model-based rating: BUY (value signal) — high risk</h2>
+<p>Rule used for this group: at a 10% discount rate, find the perpetual annual growth in free cash flow (after share-based pay) that the current price requires. BUY if that is 2% or lower, HOLD if it is between 2% and 4%, NOT A BUY if it is between 4% and 5%, and SELL if it is above 5%. Rating rule updated Nov 21, 2026: a SELL signal was added. These thresholds are my own and not from any filing. For Cirrus Logic, the price requires about 0.0% growth forever on its latest twelve months of $446M. With no growth at all, the same cash flow is worth $111 per share at 10% (price $110.61).</p>
+<p><strong>What would change this:</strong> A price above about $136 would put the required growth above 2% (HOLD), above about $177 above 4% (NOT A BUY), and above about $210 above 5% (SELL). At the current price, twelve-month FCF after share-based pay falling below about $348M (now $446M) would move it to HOLD, below about $256M to NOT A BUY, and below about $211M to SELL.</p>
+<p><strong>Main risk to the rating:</strong> Apple accounted for about 93% of net sales in the September 2026 quarter (90% a year earlier), so the whole cash flow rests on one customer. Cash flow is also slowing: operating cash flow for the first six months of fiscal 2027 was $115.0M against $208.3M a year earlier, and the 10-Q cites a $148.3M unfavorable change in working capital (higher receivables, inventories and other assets). Twelve-month FCF ($446M) is already below fiscal 2026 ($554M). The IRS is also disputing fiscal 2017-2019 transfer pricing: it asserts about $168.3M of additional tax plus about $63.7M of penalties (about $4.65 a share together, before interest); the company has not accrued it and is in Appeals. That amount is not deducted from the values here.</p>
+<p><small>Mechanical output of the model, not personalized investment advice; I am not a financial advisor.</small></p></section>
+<section>
+<h2>What changed in this version</h2>
+<p>This page was rebuilt using only Cirrus Logic's SEC filings (10-K and 10-Q data as filed). The earlier version used third-party discount rates and a market-implied WACC range, and it did not deduct share-based pay. The filings contain no cost of capital, so values are shown across an 8%–12% range, with the market price shown only as a comparison. Share-based compensation is treated as a real cost: FCF here is operating cash flow − capital spending − share-based compensation.</p>
+</section>
+<section>
+<h2>Filing data used</h2>
+<table><thead><tr><th>Fiscal year (ends late March)</th><th>Operating cash flow</th><th>Capex</th><th>Share-based pay</th><th>FCF after SBC</th></tr></thead><tbody><tr><td>FY2024 (Mar-24)</td><td>$422M</td><td>$38M</td><td>$89M</td><td>$294M</td></tr><tr><td>FY2025 (Mar-25)</td><td>$444M</td><td>$29M</td><td>$84M</td><td>$331M</td></tr><tr><td>FY2026 (Mar-26)</td><td>$651M</td><td>$15M</td><td>$82M</td><td>$554M</td></tr><tr><td>Six months to Sep 26, 2026</td><td>$115.0M</td><td>$24.1M</td><td>$38.9M</td><td>$52.0M</td></tr><tr><td>Six months to Sep 27, 2025</td><td>$208.3M</td><td>$7.3M</td><td>$41.4M</td><td>$159.7M</td></tr><tr><td>Twelve months to Sep 26, 2026 (derived)</td><td>$557.3M</td><td>$31.7M</td><td>$79.3M</td><td>$446.3M</td></tr></tbody></table>
+<table><thead><tr><th>Item</th><th>Value</th><th>Source</th></tr></thead><tbody><tr><td>Cash and securities</td><td>Cash $720.1M + current marketable securities $31.9M + long-term marketable securities $324.4M = $1,076.4M at Sep 26, 2026 (Mar 28, 2026: $800.9M + $86.7M + $266.2M)</td><td>Q2 FY2027 10-Q</td></tr><tr><td>Debt</td><td>None. No amounts outstanding on the $350M revolver (renewed May 4, 2026, matures May 4, 2031); no long-term debt on the balance sheet</td><td>10-K; Q2 FY2027 10-Q</td></tr><tr><td>Shares</td><td>49.86M at Nov 2, 2026</td><td>Q2 FY2027 10-Q cover</td></tr><tr><td>Revenue</td><td>Net sales FY2024 $1.79B · FY2025 $1.90B · FY2026 $2.00B; six months FY2027 $1,019M vs $968M; net income six months $191.6M vs $192.3M</td><td>10-K; 10-Q</td></tr><tr><td>Buybacks</td><td>FY2024 $186M · FY2025 $261M · FY2026 $280M · six months FY2027 $160M; about $114M left on the March 2025 program at Sep 26, 2026 (the board authorized another $500M on Oct 26, 2026)</td><td>10-K; 10-Q; Q2 FY2027 release</td></tr><tr><td>Commitments</td><td>Unconditional manufacturing purchase obligations $273.6M and other purchase obligations $22.4M, all due in the rest of fiscal 2027; operating lease liabilities $127.7M (current $21.9M + non-current $105.9M), not counted as debt</td><td>Q2 FY2027 10-Q</td></tr><tr><td>Acquisitions</td><td>No cash acquisitions in the six months; INVENTVM was acquired on Oct 6, 2026 (price not disclosed in the 10-Q, described as not material)</td><td>Q2 FY2027 10-Q</td></tr></tbody></table>
+</section>
+<section>
+<h2>Method</h2>
+<p>The value is the present value of a flat perpetual stream of FCF (after share-based pay) at four levels taken directly from the filings, plus cash less debt, divided by shares. No growth is assumed in the main table (g = 0), which is deliberately cautious for a business whose cash flow has been rising. The growth table below adds 2% and 4% perpetual growth on the latest twelve months, using value = FCF × (1 + g) ÷ (discount rate − g).</p>
+<p>The four levels are: <strong>Bear</strong> = the weakest of the last three fiscal years (floored at zero); <strong>Conservative</strong> = the median year; <strong>Base</strong> = the 3-year average; <strong>Run-rate</strong> = the latest twelve months.</p>
+</section>
+<section>
+<h2>Value per share by discount rate</h2>
+<table><thead><tr><th>Scenario (FCF after share-based pay, per year)</th><th>8%</th><th>9%</th><th>10%</th><th>11%</th><th>12%</th></tr></thead><tbody><tr><td>Run-rate — latest twelve months: $446M</td><td>$133</td><td>$121</td><td>$111</td><td>$103</td><td>$96</td></tr><tr><td>Base — 3-year average: $393M</td><td>$120</td><td>$109</td><td>$100</td><td>$93</td><td>$87</td></tr><tr><td>Conservative — median year: $331M</td><td>$105</td><td>$95</td><td>$88</td><td>$82</td><td>$77</td></tr><tr><td>Bear — weakest year (floored at 0): $294M</td><td>$95</td><td>$87</td><td>$81</td><td>$75</td><td>$71</td></tr></tbody></table>
+<p>For comparison, the Nov 20, 2026 price was $110.61. At a 10% discount rate and no growth, the price implies a constant FCF of about $444M per year after share-based pay, against $446M reported over the latest twelve months.</p>
+<h2>Sensitivity to growth (latest twelve months of FCF)</h2>
+<table><thead><tr><th>Discount rate</th><th>No growth</th><th>2% growth</th><th>4% growth</th></tr></thead><tbody><tr><td>8%</td><td>$133</td><td>$174</td><td>$254</td></tr><tr><td>9%</td><td>$121</td><td>$152</td><td>$208</td></tr><tr><td>10%</td><td>$111</td><td>$136</td><td>$177</td></tr><tr><td>11%</td><td>$103</td><td>$123</td><td>$155</td></tr><tr><td>12%</td><td>$96</td><td>$113</td><td>$138</td></tr></tbody></table>
+</section>
+<section>
+<h2>Caveats</h2>
+<ul><li>Marketable securities, including $324M held as long-term, are counted as cash-like. About $21.6 a share of each per-share value is cash.</li><li>The twelve-month figure is derived: fiscal 2026 plus six months of fiscal 2027 minus six months of fiscal 2026.</li><li>Capital spending is purchases of property, equipment and software plus investments in technology.</li><li>The first half of fiscal 2027 had weak cash conversion: $52M of FCF after SBC against $160M a year earlier, while net income was flat. The 10-Q attributes this to working capital. If it reverses, the twelve-month figure understates the run-rate; if it does not, the BUY signal weakens (see the thresholds above).</li><li>The unaccrued IRS exposure ($168.3M tax + $63.7M penalties, plus interest) and the $273.6M of purchase obligations are not deducted.</li><li>Cash and debt are taken at the dates shown; leases are not counted as debt.</li></ul>
+<p>These are mechanical estimates from reported data, not investment advice; I am not a financial advisor.</p>
+<h2>Sources</h2>
+<ul><li><a href="https://www.sec.gov/Archives/edgar/data/0000772406/000077240626000018/crus-20260328.htm">Cirrus Logic Form 10-K for fiscal 2026 (filed May 21, 2026)</a></li><li><a href="https://www.sec.gov/Archives/edgar/data/0000772406/000077240626000054/crus-20260926.htm">Cirrus Logic Form 10-Q for the quarter ended Sep 26, 2026</a></li><li>Price: Nov 20, 2026 close, supplied by the site owner (comparison only)</li></ul>
+</section></main>
   </body>
 </html>
